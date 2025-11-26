@@ -28,7 +28,7 @@
 cp -r node_modules/ingvar-kit/templates/cwds-components/* src/components/cwds/
 
 # Or use the CLI (interactive)
-ingvar cwds install
+ux-ingka cwds install
 ```
 
 ## Overview
@@ -49,8 +49,8 @@ These React/TypeScript component templates implement the **Co-Worker Design Syst
 # 1. First, try to install from official npm packages
 npm install @ingka/global-header @ingka/navigation-menu
 
-# 2. If not available, use ingvar CLI to install local templates
-ingvar cwds install
+# 2. If not available, use ux-ingka CLI to install local templates
+ux-ingka cwds install
 ```
 
 **Why this approach?**
@@ -183,13 +183,13 @@ npm install @ingka/navigation-menu
 
 ```bash
 # Interactive selection (choose components you need)
-ingvar cwds install
+ux-ingka cwds install
 
 # Or install all components automatically
-ingvar cwds install --auto
+ux-ingka cwds install --auto
 
 # List available components
-ingvar cwds list
+ux-ingka cwds list
 ```
 
 **What this does:**

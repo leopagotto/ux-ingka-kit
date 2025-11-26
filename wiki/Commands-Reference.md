@@ -7,20 +7,20 @@
 | Command            | Purpose                                   | Interactive | Version |
 | ------------------ | ----------------------------------------- | ----------- | ------- |
 | `ux-ingka init`      | Initialize Ingvar in project              | ✅ Yes      | v1.0.0  |
-| `ingvar agent`     | Manage specialized agents                 | ✅ Yes      | v4.0.0  |
-| `ingvar github`    | Configure repository settings             | ✅ Yes      | v4.0.0  |
-| `ingvar model`     | Manage AI model selection 🎉 NEW (v4.1.1) | ✅ Yes      | v4.1.1  |
-| `ingvar ai`        | Manage AI assistants                      | ✅ Yes      | v3.0.0  |
+| `ux-ingka agent`     | Manage specialized agents                 | ✅ Yes      | v4.0.0  |
+| `ux-ingka github`    | Configure repository settings             | ✅ Yes      | v4.0.0  |
+| `ux-ingka model`     | Manage AI model selection 🎉 NEW (v4.1.1) | ✅ Yes      | v4.1.1  |
+| `ux-ingka ai`        | Manage AI assistants                      | ✅ Yes      | v3.0.0  |
 | `ux-ingka issue`     | Create issue interactively                | ✅ Yes      | v1.0.0  |
-| `ingvar labels`    | Configure GitHub labels                   | ✅ Yes      | v1.0.0  |
-| `ingvar vscode`    | Setup VS Code integration                 | ✅ Yes      | v1.0.0  |
-| `ingvar config`    | Manage configuration                      | ✅ Yes      | v2.6.0  |
-| `ingvar status`    | Show project workflow status              | ❌ No       | v1.0.0  |
-| `ingvar health`    | System health check                       | ❌ No       | v2.0.0  |
-| `ingvar welcome`   | Show welcome banner                       | ❌ No       | v1.0.0  |
-| `ingvar docs`      | Open documentation                        | ❌ No       | v1.0.0  |
-| `ingvar --version` | Show version (6.8.5)                      | ❌ No       | v1.0.0  |
-| `ingvar --help`    | Show help                                 | ❌ No       | v1.0.0  |
+| `ux-ingka labels`    | Configure GitHub labels                   | ✅ Yes      | v1.0.0  |
+| `ux-ingka vscode`    | Setup VS Code integration                 | ✅ Yes      | v1.0.0  |
+| `ux-ingka config`    | Manage configuration                      | ✅ Yes      | v2.6.0  |
+| `ux-ingka status`    | Show project workflow status              | ❌ No       | v1.0.0  |
+| `ux-ingka health`    | System health check                       | ❌ No       | v2.0.0  |
+| `ux-ingka welcome`   | Show welcome banner                       | ❌ No       | v1.0.0  |
+| `ux-ingka docs`      | Open documentation                        | ❌ No       | v1.0.0  |
+| `ux-ingka --version` | Show version (6.8.5)                      | ❌ No       | v1.0.0  |
+| `ux-ingka --help`    | Show help                                 | ❌ No       | v1.0.0  |
 
 ---
 
@@ -89,24 +89,24 @@ your-project/
 
 ---
 
-### `ingvar ai` 🎉 NEW in v3.0.0
+### `ux-ingka ai` 🎉 NEW in v3.0.0
 
 Manage AI assistant configurations and instruction files.
 
 **Usage:**
 
 ```bash
-ingvar ai [subcommand] [args...]
+ux-ingka ai [subcommand] [args...]
 ```
 
 **Subcommands:**
 
-#### `ingvar ai list` (alias: `ingvar ai ls`)
+#### `ux-ingka ai list` (alias: `ux-ingka ai ls`)
 
 List configured AI assistants with file paths and status.
 
 ```bash
-ingvar ai list
+ux-ingka ai list
 ```
 
 **Example Output:**
@@ -126,14 +126,14 @@ ingvar ai list
   Primary AI: copilot
 ```
 
-#### `ingvar ai add <ai-name>`
+#### `ux-ingka ai add <ai-name>`
 
 Add a new AI assistant and generate its instruction file.
 
 ```bash
-ingvar ai add cursor      # Add Cursor (Claude-powered IDE)
-ingvar ai add cline       # Add Cline (autonomous coding)
-ingvar ai add codeium     # Add Codeium (free alternative)
+ux-ingka ai add cursor      # Add Cursor (Claude-powered IDE)
+ux-ingka ai add cline       # Add Cline (autonomous coding)
+ux-ingka ai add codeium     # Add Codeium (free alternative)
 ```
 
 **Available AIs:**
@@ -157,13 +157,13 @@ ingvar ai add codeium     # Add Codeium (free alternative)
   Generated: .cursorrules
 ```
 
-#### `ingvar ai remove <ai-name>` (alias: `ingvar ai rm`)
+#### `ux-ingka ai remove <ai-name>` (alias: `ux-ingka ai rm`)
 
 Remove an AI assistant and delete its instruction file.
 
 ```bash
-ingvar ai remove cursor
-ingvar ai rm cursor
+ux-ingka ai remove cursor
+ux-ingka ai rm cursor
 ```
 
 **What It Does:**
@@ -172,12 +172,12 @@ ingvar ai rm cursor
 2. Removes from configuration
 3. Updates primary AI if needed
 
-#### `ingvar ai sync`
+#### `ux-ingka ai sync`
 
 Regenerate all AI instruction files for configured assistants.
 
 ```bash
-ingvar ai sync
+ux-ingka ai sync
 ```
 
 **When to Use:**
@@ -201,31 +201,31 @@ ingvar ai sync
   ✓ Success: 4
 ```
 
-#### `ingvar ai diff <ai1> <ai2>` (coming soon)
+#### `ux-ingka ai diff <ai1> <ai2>` (coming soon)
 
 Compare two AI configurations (planned feature).
 
 ```bash
-ingvar ai diff copilot cursor
+ux-ingka ai diff copilot cursor
 ```
 
 **Examples:**
 
 ```bash
 # List what's configured
-ingvar ai list
+ux-ingka ai list
 
 # Add Cursor for complex refactoring
-ingvar ai add cursor
+ux-ingka ai add cursor
 
 # Add Codeium as free alternative
-ingvar ai add codeium
+ux-ingka ai add codeium
 
 # Update all instruction files
-ingvar ai sync
+ux-ingka ai sync
 
 # Remove an AI you no longer use
-ingvar ai remove cline
+ux-ingka ai remove cline
 ```
 
 **Configuration:**
@@ -248,26 +248,26 @@ AI settings are stored in `.ingvarrc.json`:
 
 ---
 
-### `ingvar agent` 🎉 NEW in v4.0.0
+### `ux-ingka agent` 🎉 NEW in v4.0.0
 
 Manage specialized AI agents for multi-agent orchestration.
 
 **Usage:**
 
 ```bash
-ingvar agent <subcommand> [agent] [options]
+ux-ingka agent <subcommand> [agent] [options]
 ```
 
 **Subcommands:**
 
-#### `ingvar agent list`
+#### `ux-ingka agent list`
 
 Show all agents and their current status.
 
 **Usage:**
 
 ```bash
-ingvar agent list
+ux-ingka agent list
 ```
 
 **Output:**
@@ -290,24 +290,24 @@ Project Type: fullstack
 Total: 2 agents enabled
 ```
 
-#### `ingvar agent enable <agent>`
+#### `ux-ingka agent enable <agent>`
 
 Enable a specialized agent.
 
 **Usage:**
 
 ```bash
-ingvar agent enable frontend
-ingvar agent enable backend
-ingvar agent enable devops
-ingvar agent enable testing
-ingvar agent enable documentation
+ux-ingka agent enable frontend
+ux-ingka agent enable backend
+ux-ingka agent enable devops
+ux-ingka agent enable testing
+ux-ingka agent enable documentation
 ```
 
 **Example:**
 
 ```bash
-ingvar agent enable frontend
+ux-ingka agent enable frontend
 # Output:
 # ✔ frontend agent enabled
 # ? Regenerate AI instruction files with new agent? (Y/n)
@@ -317,27 +317,27 @@ ingvar agent enable frontend
 
 - `--no-sync` - Skip AI file regeneration prompt
 
-#### `ingvar agent disable <agent>`
+#### `ux-ingka agent disable <agent>`
 
 Disable a specialized agent.
 
 **Usage:**
 
 ```bash
-ingvar agent disable devops
+ux-ingka agent disable devops
 ```
 
 **Note:** Cannot disable the Orchestrator agent (core routing layer).
 
-#### `ingvar agent info <agent>`
+#### `ux-ingka agent info <agent>`
 
 Show detailed information about a specific agent.
 
 **Usage:**
 
 ```bash
-ingvar agent info frontend
-ingvar agent info orchestrator
+ux-ingka agent info frontend
+ux-ingka agent info orchestrator
 ```
 
 **Output:**
@@ -363,14 +363,14 @@ Routing Triggers:
   • Files: *.jsx, *.tsx, *.vue, *.css, *.scss
 ```
 
-#### `ingvar agent sync`
+#### `ux-ingka agent sync`
 
 Regenerate AI instruction files with current agent configuration.
 
 **Usage:**
 
 ```bash
-ingvar agent sync
+ux-ingka agent sync
 ```
 
 **When to Use:**
@@ -412,26 +412,26 @@ Agents are configured in `.ingvarrc.json`:
 
 ---
 
-### `ingvar github` 🎉 NEW in v4.0.0
+### `ux-ingka github` 🎉 NEW in v4.0.0
 
 Configure GitHub repository settings with Ingvar recommended best practices.
 
 **Usage:**
 
 ```bash
-ingvar github <subcommand> [options]
+ux-ingka github <subcommand> [options]
 ```
 
 **Subcommands:**
 
-#### `ingvar github status`
+#### `ux-ingka github status`
 
 Show current GitHub repository settings.
 
 **Usage:**
 
 ```bash
-ingvar github status
+ux-ingka github status
 ```
 
 **Output:**
@@ -462,15 +462,15 @@ Merge Settings:
   Allow rebase merge:  ✓ Enabled
 ```
 
-#### `ingvar github setup`
+#### `ux-ingka github setup`
 
 Configure repository with recommended settings.
 
 **Usage:**
 
 ```bash
-ingvar github setup          # Interactive (asks for confirmation)
-ingvar github setup --yes    # Non-interactive (applies without asking)
+ux-ingka github setup          # Interactive (asks for confirmation)
+ux-ingka github setup --yes    # Non-interactive (applies without asking)
 ```
 
 **Recommended Settings:**
@@ -500,7 +500,7 @@ ingvar github setup --yes    # Non-interactive (applies without asking)
 **Example:**
 
 ```bash
-ingvar github setup
+ux-ingka github setup
 
 # Output:
 # ⚙️  GitHub Repository Settings Setup
@@ -532,26 +532,26 @@ ingvar github setup
 
 ---
 
-### `ingvar model` 🎉 NEW in v4.1.1
+### `ux-ingka model` 🎉 NEW in v4.1.1
 
 Manage AI model selection for intelligent task routing and cost optimization.
 
 **Usage:**
 
 ```bash
-ingvar model <subcommand> [options]
+ux-ingka model <subcommand> [options]
 ```
 
 **Subcommands:**
 
-#### `ingvar model status`
+#### `ux-ingka model status`
 
 Show current model selection configuration and usage.
 
 **Usage:**
 
 ```bash
-ingvar model status
+ux-ingka model status
 ```
 
 **Output Shows:**
@@ -563,44 +563,44 @@ ingvar model status
 - Available AI providers
 - API key configuration status
 
-#### `ingvar model list`
+#### `ux-ingka model list`
 
 List all available AI models.
 
 **Usage:**
 
 ```bash
-ingvar model list
+ux-ingka model list
 ```
 
-#### `ingvar model enable`
+#### `ux-ingka model enable`
 
 Enable model selection feature.
 
 **Usage:**
 
 ```bash
-ingvar model enable
+ux-ingka model enable
 ```
 
-#### `ingvar model disable`
+#### `ux-ingka model disable`
 
 Disable model selection feature.
 
 **Usage:**
 
 ```bash
-ingvar model disable
+ux-ingka model disable
 ```
 
-#### `ingvar model budget`
+#### `ux-ingka model budget`
 
 Configure usage budgets.
 
 **Usage:**
 
 ```bash
-ingvar model budget [options]
+ux-ingka model budget [options]
 ```
 
 **Options:**
@@ -609,34 +609,34 @@ ingvar model budget [options]
 - `--monthly <amount>` - Set monthly budget (default: $50)
 - `--per-agent <amount>` - Set per-agent budget (default: $10)
 
-#### `ingvar model usage`
+#### `ux-ingka model usage`
 
 Check current model usage statistics.
 
 **Usage:**
 
 ```bash
-ingvar model usage
+ux-ingka model usage
 ```
 
-#### `ingvar model reset`
+#### `ux-ingka model reset`
 
 Reset usage counters (admin only).
 
 **Usage:**
 
 ```bash
-ingvar model reset
+ux-ingka model reset
 ```
 
-#### `ingvar model test`
+#### `ux-ingka model test`
 
 Test model selection for a specific agent and complexity.
 
 **Usage:**
 
 ```bash
-ingvar model test <agent> [complexity]
+ux-ingka model test <agent> [complexity]
 ```
 
 **Arguments:**
@@ -757,14 +757,14 @@ ux-ingka issue
 
 ---
 
-### `ingvar labels`
+### `ux-ingka labels`
 
 Configure GitHub repository labels.
 
 **Usage:**
 
 ```bash
-ingvar labels [options]
+ux-ingka labels [options]
 ```
 
 **What It Does:**
@@ -780,9 +780,9 @@ ingvar labels [options]
 **Options:**
 
 ```bash
-ingvar labels --force        # Overwrite existing labels
-ingvar labels --dry-run      # Preview without creating
-ingvar labels --help         # Show help
+ux-ingka labels --force        # Overwrite existing labels
+ux-ingka labels --dry-run      # Preview without creating
+ux-ingka labels --help         # Show help
 ```
 
 **Label Categories:**
@@ -824,20 +824,20 @@ ingvar labels --help         # Show help
 **Example:**
 
 ```bash
-ingvar labels
+ux-ingka labels
 # Creates all 22+ labels with colors and descriptions
 ```
 
 ---
 
-### `ingvar vscode`
+### `ux-ingka vscode`
 
 Setup VS Code integration with Copilot instructions.
 
 **Usage:**
 
 ```bash
-ingvar vscode
+ux-ingka vscode
 ```
 
 **What It Does:**
@@ -860,7 +860,7 @@ ingvar vscode
 **Example:**
 
 ```bash
-ingvar vscode
+ux-ingka vscode
 # ✓ Created .github/copilot-instructions.md
 # ✓ Copilot will now follow Ingvar workflow
 ```
@@ -874,14 +874,14 @@ ingvar vscode
 
 ---
 
-### `ingvar status`
+### `ux-ingka status`
 
 Show current project workflow status.
 
 **Usage:**
 
 ```bash
-ingvar status
+ux-ingka status
 ```
 
 **Displays:**
@@ -920,14 +920,14 @@ All systems operational! 🚀
 
 ---
 
-### `ingvar health`
+### `ux-ingka health`
 
 Run system health check.
 
 **Usage:**
 
 ```bash
-ingvar health
+ux-ingka health
 ```
 
 **Checks:**
@@ -971,14 +971,14 @@ All checks passed! ✅
 
 ---
 
-### `ingvar welcome`
+### `ux-ingka welcome`
 
 Display Ingvar welcome banner.
 
 **Usage:**
 
 ```bash
-ingvar welcome
+ux-ingka welcome
 ```
 
 **Shows:**
@@ -990,23 +990,23 @@ ingvar welcome
 
 ---
 
-### `ingvar docs`
+### `ux-ingka docs`
 
 Open documentation.
 
 **Usage:**
 
 ```bash
-ingvar docs [topic]
+ux-ingka docs [topic]
 ```
 
 **Topics:**
 
 ```bash
-ingvar docs                  # Open main docs
-ingvar docs guides           # Open guides folder
-ingvar docs specs            # Open specs folder
-ingvar docs readme           # Open README
+ux-ingka docs                  # Open main docs
+ux-ingka docs guides           # Open guides folder
+ux-ingka docs specs            # Open specs folder
+ux-ingka docs readme           # Open README
 ```
 
 ---
@@ -1027,8 +1027,8 @@ Available for all commands:
 
 ```bash
 ux-ingka init --help
-ingvar status --verbose
-ingvar labels --quiet
+ux-ingka status --verbose
+ux-ingka labels --quiet
 ```
 
 ---
@@ -1039,13 +1039,13 @@ Some commands can be chained:
 
 ```bash
 # Initialize and configure labels
-ux-ingka init && ingvar labels
+ux-ingka init && ux-ingka labels
 
 # Health check before status
-ingvar health && ingvar status
+ux-ingka health && ux-ingka status
 
 # Full setup
-ux-ingka init && ingvar labels && ingvar vscode
+ux-ingka init && ux-ingka labels && ux-ingka vscode
 ```
 
 ---
@@ -1057,7 +1057,7 @@ ux-ingka init && ingvar labels && ingvar vscode
 ```bash
 cd new-project
 ux-ingka init              # Initialize Ingvar
-ingvar labels            # Configure labels
+ux-ingka labels            # Configure labels
 # Start coding - Copilot handles the rest!
 ```
 
@@ -1066,7 +1066,7 @@ ingvar labels            # Configure labels
 ```bash
 cd existing-project
 ux-ingka init --skip-labels  # Keep existing labels
-ingvar vscode             # Add Copilot instructions
+ux-ingka vscode             # Add Copilot instructions
 ```
 
 ### Create Issue Manually
@@ -1079,8 +1079,8 @@ ux-ingka issue
 ### Check Everything is OK
 
 ```bash
-ingvar health    # System check
-ingvar status    # Project status
+ux-ingka health    # System check
+ux-ingka status    # Project status
 ```
 
 ---
@@ -1099,8 +1099,8 @@ gh issue create --title "..." --body "..." --label "bug,p1"
 ```bash
 # Add to ~/.bashrc or ~/.zshrc
 alias li="ux-ingka init"
-alias ls="ingvar status"
-alias lh="ingvar health"
+alias ls="ux-ingka status"
+alias lh="ux-ingka health"
 ```
 
 ### 3. CI/CD Usage
@@ -1113,8 +1113,8 @@ npx ux-ingka-kit init --skip-labels --force
 ### 4. Quick Health Check
 
 ```bash
-ingvar health | grep "✓"    # Show only passed checks
-ingvar health | grep "✗"    # Show only failed checks
+ux-ingka health | grep "✓"    # Show only passed checks
+ux-ingka health | grep "✗"    # Show only failed checks
 ```
 
 ---

@@ -639,23 +639,23 @@ GitHub-native specification workflow with evolution tracking:
 ux-ingka spec new "Build authentication system"
 
 # Clarify requirements
-ingvar clarify 42
+ux-ingka clarify 42
 
 # Generate implementation plan
-ingvar plan 42
+ux-ingka plan 42
 ```
 
 **Dual-Mode Task Management:**
 
 ```bash
 # Checklist mode (simple, single issue)
-ingvar tasks create 42
+ux-ingka tasks create 42
 
 # Child issues mode (parallel work, team collaboration)
-ingvar tasks create 42 --create-issues
+ux-ingka tasks create 42 --create-issues
 
 # Track progress
-ingvar tasks status 42  # Shows: 5/10 completed (50%)
+ux-ingka tasks status 42  # Shows: 5/10 completed (50%)
 ```
 
 **Spec Evolution & Extensions:**
@@ -692,15 +692,15 @@ Automatically organizes markdown files:
 
 # Organize documentation
 
-ingvar organize-docs
+ux-ingka organize-docs
 
 # Validate organization
 
-ingvar organize-docs --validate
+ux-ingka organize-docs --validate
 
 # Enable pre-commit hook
 
-ingvar hooks install
+ux-ingka hooks install
 \`\`\`
 
 **Features:**
@@ -737,7 +737,7 @@ Ingvar transforms your GitHub workflow with intelligent automation. Here's the s
 
 ```bash
 # Three easy ways:
-ingvar issue                         # Interactive prompts
+ux-ingka issue                         # Interactive prompts
 "Hey Copilot, add dark mode"         # Just talk (Copilot auto-creates issue)
 ux-ingka spec new "Build payment system" # For complex features
 ```
@@ -780,19 +780,19 @@ ux-ingka spec new "Build authentication system"
 → Creates structured spec template
 
 # 2. Clarify requirements (AI asks questions)
-ingvar clarify 42
+ux-ingka clarify 42
 → "What auth methods? OAuth? Email? Both?"
 
 # 3. Generate implementation plan
-ingvar plan 42
+ux-ingka plan 42
 → Creates step-by-step checklist
 
 # 4. Create tasks (2 modes)
-ingvar tasks create 42                    # Checklist (simple)
-ingvar tasks create 42 --create-issues    # Child issues (teams)
+ux-ingka tasks create 42                    # Checklist (simple)
+ux-ingka tasks create 42 --create-issues    # Child issues (teams)
 
 # 5. Track progress
-ingvar tasks status 42
+ux-ingka tasks status 42
 → Shows: "5/10 completed (50%)"
 
 # 6. Extend spec later (optional)
@@ -824,7 +824,7 @@ You → Orchestrator → Specialist Agent → GitHub Issue → Work → Done
 
 Ingvar has 3 layers:
 
-1. **CLI Commands** - What you type (`ux-ingka init`, `ingvar issue`, `ux-ingka spec new`)
+1. **CLI Commands** - What you type (`ux-ingka init`, `ux-ingka issue`, `ux-ingka spec new`)
 2. **Orchestrator** - Smart router that picks the right agent
 3. **Specialist Agents** - Experts (Frontend, Backend, DevOps, Testing, Docs)
 
@@ -985,29 +985,29 @@ This creates:
 
 # Create an issue
 
-ingvar issue
+ux-ingka issue
 
 # Organize documentation
 
-ingvar organize-docs
+ux-ingka organize-docs
 
 # Check project health
 
-ingvar health
+ux-ingka health
 
 # Enable/disable agents
 
-ingvar agent list
-ingvar agent enable frontend
-ingvar agent disable testing
+ux-ingka agent list
+ux-ingka agent enable frontend
+ux-ingka agent disable testing
 
 # Configure settings
 
-ingvar config
+ux-ingka config
 
 # View all commands
 
-ingvar --help
+ux-ingka --help
 \`\`\`
 
 ### Spec-First Commands
@@ -1024,7 +1024,7 @@ ux-ingka spec new "Build user dashboard"
 
 **Clarify Requirements:**
 \`\`\`bash
-ingvar clarify 42
+ux-ingka clarify 42
 
 # AI asks clarifying questions
 
@@ -1034,7 +1034,7 @@ ingvar clarify 42
 
 **Generate Implementation Plan:**
 \`\`\`bash
-ingvar plan 42
+ux-ingka plan 42
 
 # Creates step-by-step task checklist
 
@@ -1047,15 +1047,15 @@ ingvar plan 42
 
 # Checklist mode (default) - tasks stay in spec
 
-ingvar tasks create 42
+ux-ingka tasks create 42
 
 # Child issues mode - tasks become separate issues
 
-ingvar tasks create 42 --create-issues
+ux-ingka tasks create 42 --create-issues
 
 # Check progress
 
-ingvar tasks status 42
+ux-ingka tasks status 42
 
 # Shows: 5/10 completed (50%)
 
@@ -1111,7 +1111,7 @@ ux-ingka spec-extend 42 "Add mobile app" --no-update
 - **[Visual Workflow Guide](docs/WORKFLOW_DIAGRAMS.md)** - Simple diagrams showing how Ingvar works
 - **[GitHub Integration Guide](docs/guides/GITHUB_INTEGRATION_GUIDE.md)** - GitHub Projects and automation
 - **[Configuration Guide](#-configuration)** - Customize Ingvar for your project (see below)
-- **[CLI Reference](bin/cli.js)** - All commands and options (`ingvar --help`)
+- **[CLI Reference](bin/cli.js)** - All commands and options (`ux-ingka --help`)
 
 ### IKEA Design Systems
 
@@ -1168,17 +1168,17 @@ ux-ingka spec new "Build user authentication system"
 
 # 2. Clarify requirements (AI asks questions)
 
-ingvar clarify 42
+ux-ingka clarify 42
 → Updates spec with clarifications
 
 # 3. Generate implementation plan
 
-ingvar plan 42
+ux-ingka plan 42
 → Creates task checklist in spec
 
 # 4. Create child issues for parallel work (optional)
 
-ingvar tasks create 42 --create-issues
+ux-ingka tasks create 42 --create-issues
 → Converts tasks into separate GitHub issues
 
 # 5. Track evolution as spec changes
@@ -1404,10 +1404,10 @@ lib/ai-instructions/frontend-agent.md # Priority rules
 ```bash
 # ✅ Now consistent everywhere:
 ux-ingka init              # Initialize workflow
-ingvar agent list        # List AI agents
-ingvar ai sync           # Regenerate AI instructions
-ingvar issue             # Create GitHub issue
-ingvar github setup      # Configure repository
+ux-ingka agent list        # List AI agents
+ux-ingka ai sync           # Regenerate AI instructions
+ux-ingka issue             # Create GitHub issue
+ux-ingka github setup      # Configure repository
 ```
 
 **Benefits:** ✅ Eliminates user confusion • ✅ Consistent documentation • ✅ Better developer experience • ✅ Accurate CLI examples throughout

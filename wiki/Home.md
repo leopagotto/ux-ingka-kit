@@ -47,8 +47,8 @@ UX Ingka Kit is a powerful CLI tool that revolutionizes software development pro
 - 🎯 **Domain Expertise**: Each agent expert in its field (~13-17KB specialized instructions)
 - ⚡ **Enable What You Need**: Configure agents based on your project type
 - 🔄 **Multi-Agent Coordination**: Complex tasks automatically coordinated across agents
-- 🛠️ **New `ingvar agent` Command**: Manage agents (list, enable, disable, info, sync)
-- ⚙️ **New `ingvar github` Command**: Configure repository settings with best practices
+- 🛠️ **New `ux-ingka agent` Command**: Manage agents (list, enable, disable, info, sync)
+- ⚙️ **New `ux-ingka github` Command**: Configure repository settings with best practices
 
 **What's New in 3.0.0:** 🎯 GitHub-Native Issue Creation
 
@@ -73,10 +73,10 @@ UX Ingka Kit is a powerful CLI tool that revolutionizes software development pro
 ### Core Features
 
 - [Multi-Agent Orchestration](./Multi-Agent-System) - Intelligent routing to specialized agents 🎉 NEW v4.0.0
-- [Agent Management](./Agent-Commands) - `ingvar agent` command reference 🎉 NEW v4.0.0
-- [GitHub Settings Automation](./GitHub-Commands) - `ingvar github` command reference 🎉 NEW v4.0.0
+- [Agent Management](./Agent-Commands) - `ux-ingka agent` command reference 🎉 NEW v4.0.0
+- [GitHub Settings Automation](./GitHub-Commands) - `ux-ingka github` command reference 🎉 NEW v4.0.0
 - [Multi-AI Support](./Multi-AI-Support) - Use Copilot, Cursor, Cline, or Codeium
-- [AI Assistant Management](./AI-Commands) - `ingvar ai` command reference
+- [AI Assistant Management](./AI-Commands) - `ux-ingka ai` command reference
 - [Automatic Initialization](./Automatic-Initialization) - Zero-config setup
 - [Smart Project Types](./Smart-Project-Types) - Optimized instructions per project type
 - [Workflow Configuration](./Configuration) - Control auto-resolution & behavior
@@ -130,7 +130,7 @@ INGVAR_AUTO_INIT=true npm install ux-ingka-kit
 
 ```bash
 # For teams - disable auto-resolution for review workflow
-ingvar config set auto-resolve false
+ux-ingka config set auto-resolve false
 
 # Now when Copilot creates issues:
 # ✅ Issue #42 created
@@ -139,10 +139,10 @@ ingvar config set auto-resolve false
 # ✅ Copilot proceeds with implementation
 
 # Check current config
-ingvar config list
+ux-ingka config list
 
 # Re-enable for solo fast-paced work
-ingvar config set auto-resolve true
+ux-ingka config set auto-resolve true
 ```
 
 ### Example 3: Simple Task (Direct Issue)
@@ -193,8 +193,8 @@ ux-ingka init
 **Major Features:**
 
 - ✅ **Multi-Agent Orchestration** - Intelligent routing to 6 specialized agents
-- ✅ **New `ingvar agent` Command** - Manage agents (list, enable, disable, info, sync)
-- ✅ **New `ingvar github` Command** - Automated repository settings configuration
+- ✅ **New `ux-ingka agent` Command** - Manage agents (list, enable, disable, info, sync)
+- ✅ **New `ux-ingka github` Command** - Automated repository settings configuration
 - ✅ **Domain Expertise** - Each agent specialized in its field (~13-17KB instructions)
 - ✅ **Flexible Configuration** - Enable only agents you need
 - ✅ **Multi-AI Support** - Copilot, Cursor, Cline, Codeium (v3.0.0)

@@ -175,10 +175,10 @@ program
     if (!inputText) {
       console.log(chalk.yellow('\n💬 Natural Language Command Detection\n'));
       console.log('Examples:');
-      console.log(chalk.cyan('  ingvar detect "create an app"'));
-      console.log(chalk.cyan('  ingvar detect "build a task management app"'));
-      console.log(chalk.cyan('  ingvar detect "make a dashboard with charts"'));
-      console.log(chalk.cyan('  ingvar detect "generate a landing page"'));
+      console.log(chalk.cyan('  ux-ingka detect "create an app"'));
+      console.log(chalk.cyan('  ux-ingka detect "build a task management app"'));
+      console.log(chalk.cyan('  ux-ingka detect "make a dashboard with charts"'));
+      console.log(chalk.cyan('  ux-ingka detect "generate a landing page"'));
       console.log(chalk.gray('\nOr just say what you want naturally!\n'));
       return;
     }
@@ -285,7 +285,7 @@ program
     });
 
     console.log();
-    console.log(chalk.gray('💡 Run `ingvar health` for comprehensive health check\n'));
+    console.log(chalk.gray('💡 Run `ux-ingka health` for comprehensive health check\n'));
   });
 
 // Health command - Comprehensive workflow health check
@@ -357,7 +357,7 @@ program
         console.log(chalk.gray('    Validates documentation organization before commit\n'));
       } else {
         console.log(chalk.yellow('  ✗ Pre-commit hook: Not installed'));
-        console.log(chalk.gray('    Run: ingvar hooks install\n'));
+        console.log(chalk.gray('    Run: ux-ingka hooks install\n'));
       }
     } else {
       console.log(chalk.red('\n❌ Unknown action. Use: install, uninstall, or status\n'));
@@ -381,19 +381,19 @@ program
         if (existing && !options.force) {
           console.log(chalk.yellow('\n⚠️  Constitutional principles already exist'));
           console.log(chalk.gray('   Use --force to overwrite\n'));
-          console.log('   View with: ' + chalk.cyan('ingvar constitution show'));
+          console.log('   View with: ' + chalk.cyan('ux-ingka constitution show'));
           return;
         }
         await manager.init({ interactive: !options.nonInteractive });
         console.log(chalk.green('\n🎉 Next steps:'));
         console.log(`   1. Review: ${chalk.cyan('docs/CONSTITUTION.md')}`);
         console.log(`   2. Share with team for feedback`);
-        console.log(`   3. Start using: ${chalk.cyan('ingvar spec new')}`);
+        console.log(`   3. Start using: ${chalk.cyan('ux-ingka spec new')}`);
       } else if (action === 'show') {
         const constitution = await manager.load();
         if (!constitution) {
           console.log(chalk.yellow('\n⚠️  No constitutional principles found'));
-          console.log(chalk.gray('   Initialize with: ') + chalk.cyan('ingvar constitution init\n'));
+          console.log(chalk.gray('   Initialize with: ') + chalk.cyan('ux-ingka constitution init\n'));
           return;
         }
         if (options.json) {
@@ -444,8 +444,8 @@ program
         const description = args.join(' ');
         if (!description) {
           console.log(chalk.red('\n❌ Please provide a description'));
-          console.log(chalk.gray('\nUsage: ') + chalk.cyan('ingvar spec new <description>'));
-          console.log(chalk.gray('\nExample: ') + chalk.cyan('ingvar spec new "Add OAuth2 authentication with Google and GitHub"'));
+          console.log(chalk.gray('\nUsage: ') + chalk.cyan('ux-ingka spec new <description>'));
+          console.log(chalk.gray('\nExample: ') + chalk.cyan('ux-ingka spec new "Add OAuth2 authentication with Google and GitHub"'));
           return;
         }
 
@@ -467,7 +467,7 @@ program
         const issueNumber = args[0];
         if (!issueNumber) {
           console.log(chalk.red('\n❌ Please provide an issue number'));
-          console.log(chalk.gray('\nUsage: ') + chalk.cyan('ingvar spec show <issue-number>'));
+          console.log(chalk.gray('\nUsage: ') + chalk.cyan('ux-ingka spec show <issue-number>'));
           return;
         }
         await manager.show(issueNumber);
@@ -479,10 +479,10 @@ program
         console.log(chalk.gray('  list [status] [limit] - List spec issues (default: all, 30)'));
         console.log(chalk.gray('  show <issue-number>   - Show spec issue details\n'));
         console.log(chalk.gray('\nExamples:'));
-        console.log(chalk.cyan('  ingvar spec new "Add user authentication"'));
-        console.log(chalk.cyan('  ingvar spec new "Refactor database layer" --type refactor --priority high'));
-        console.log(chalk.cyan('  ingvar spec list open'));
-        console.log(chalk.cyan('  ingvar spec show 42\n'));
+        console.log(chalk.cyan('  ux-ingka spec new "Add user authentication"'));
+        console.log(chalk.cyan('  ux-ingka spec new "Refactor database layer" --type refactor --priority high'));
+        console.log(chalk.cyan('  ux-ingka spec list open'));
+        console.log(chalk.cyan('  ux-ingka spec show 42\n'));
       }
     } catch (error) {
       console.error(chalk.red(`\n❌ Error:`, error.message));

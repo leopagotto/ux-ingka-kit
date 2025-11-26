@@ -72,10 +72,10 @@ npm install -g ux-ingka-kit@6.8.5
 **Verify installation:**
 
 ```bash
-ingvar --version
+ux-ingka --version
 # Should show: 6.8.5 (or later)
 
-ingvar --help
+ux-ingka --help
 # Shows all available commands
 ```
 
@@ -126,7 +126,7 @@ npm install
 npm link
 
 # Verify
-ingvar --version
+ux-ingka --version
 ```
 
 **When to use:**
@@ -276,10 +276,10 @@ ux-ingka init
 
 ```bash
 # Show version
-ingvar --version
+ux-ingka --version
 
 # Show all commands
-ingvar --help
+ux-ingka --help
 
 # Check GitHub auth
 gh auth status
@@ -292,13 +292,13 @@ node --version
 
 ```bash
 # Check project status
-ingvar status
+ux-ingka status
 
 # System health check
-ingvar health
+ux-ingka health
 
 # View documentation structure
-ingvar docs
+ux-ingka docs
 ```
 
 ---
@@ -503,13 +503,13 @@ nvm use 20
 
 ```bash
 # Check current version
-ingvar --version
+ux-ingka --version
 
 # Update globally
 npm update -g ux-ingka-kit
 
 # Verify new version
-ingvar --version
+ux-ingka --version
 ```
 
 ### Update from Source
@@ -548,11 +548,11 @@ rm -rf docs/
 
 After installation, verify everything works:
 
-- [ ] `ingvar --version` shows correct version
+- [ ] `ux-ingka --version` shows correct version
 - [ ] `gh auth status` shows authenticated
 - [ ] `ux-ingka init` completes successfully
-- [ ] `ingvar status` shows project info
-- [ ] `ingvar health` passes all checks
+- [ ] `ux-ingka status` shows project info
+- [ ] `ux-ingka health` passes all checks
 - [ ] GitHub Copilot is enabled in VS Code
 
 ---

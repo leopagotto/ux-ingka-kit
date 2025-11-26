@@ -29,7 +29,7 @@ To create the most intelligent, automated, and developer-friendly project manage
 **Major Features:**
 
 - Support for 4 AI assistants (Copilot, Cursor, Cline, Codeium)
-- New `ingvar ai` command (list, add, remove, sync)
+- New `ux-ingka ai` command (list, add, remove, sync)
 - AI selection during initialization
 - AI-specific optimized instructions (~40KB each)
 - Backward compatible with v2.x Copilot setups
@@ -251,7 +251,7 @@ See issue #15 for details
 #### 4. Team Dashboard
 
 - Terminal-based team activity dashboard
-- `ingvar team` command for team insights
+- `ux-ingka team` command for team insights
 - Real-time collaboration status
 
 **Estimated Effort:** 4-5 weeks

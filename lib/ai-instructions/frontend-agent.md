@@ -156,7 +156,7 @@ Toast/             Tooltip/          + Icons/ (800+ SVGs)
 
 ```bash
 # Copy template to your project
-ingvar components add Button
+ux-ingka components add Button
 
 # This creates: src/components/Button/Button.tsx
 # Now you can modify it for your needs
@@ -268,7 +268,7 @@ import { CustomDashboardCard } from "./components/DashboardCard"; // Custom
 4. **If template exists and you need customization:**
 
    ```bash
-   ingvar components add ComponentName
+   ux-ingka components add ComponentName
    # Then modify the copied file
    ```
 

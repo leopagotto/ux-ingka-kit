@@ -3,11 +3,11 @@
  * Manages project constitutional principles
  *
  * Commands:
- *   ingvar constitution init       - Initialize constitutional principles
- *   ingvar constitution show       - Display current principles
- *   ingvar constitution add        - Add a new principle
- *   ingvar constitution remove     - Remove a principle
- *   ingvar constitution update     - Update a principle
+ *   ux-ingka constitution init       - Initialize constitutional principles
+ *   ux-ingka constitution show       - Display current principles
+ *   ux-ingka constitution add        - Add a new principle
+ *   ux-ingka constitution remove     - Remove a principle
+ *   ux-ingka constitution update     - Update a principle
  */
 
 const { Command } = require('commander');
@@ -17,11 +17,11 @@ const { ConstitutionManager } = require('../lib/constitution');
 const program = new Command();
 
 program
-  .name('ingvar constitution')
+  .name('ux-ingka constitution')
   .description('Manage project constitutional principles')
   .version('1.0.0');
 
-// ingvar constitution init
+// ux-ingka constitution init
 program
   .command('init')
   .description('Initialize constitutional principles for your project')
@@ -37,8 +37,8 @@ program
       if (existing && !options.force) {
         console.log(chalk.yellow('\n⚠️  Constitutional principles already exist'));
         console.log(chalk.gray('   Use --force to overwrite\n'));
-        console.log('   View with: ' + chalk.cyan('ingvar constitution show'));
-        console.log('   Update with: ' + chalk.cyan('ingvar constitution update'));
+        console.log('   View with: ' + chalk.cyan('ux-ingka constitution show'));
+        console.log('   Update with: ' + chalk.cyan('ux-ingka constitution update'));
         return;
       }
 
@@ -49,7 +49,7 @@ program
       console.log(chalk.green('\n🎉 Next steps:'));
       console.log(`   1. Review: ${chalk.cyan('docs/CONSTITUTION.md')}`);
       console.log(`   2. Share with team for feedback`);
-      console.log(`   3. Start using: ${chalk.cyan('ingvar spec new')}`);
+      console.log(`   3. Start using: ${chalk.cyan('ux-ingka spec new')}`);
       console.log('');
     } catch (error) {
       console.error(chalk.red('\n❌ Error initializing constitution:'), error.message);
@@ -57,7 +57,7 @@ program
     }
   });
 
-// ingvar constitution show
+// ux-ingka constitution show
 program
   .command('show')
   .description('Display current constitutional principles')
@@ -69,7 +69,7 @@ program
 
       if (!constitution) {
         console.log(chalk.yellow('\n⚠️  No constitutional principles found'));
-        console.log(chalk.gray('   Initialize with: ') + chalk.cyan('ingvar constitution init\n'));
+        console.log(chalk.gray('   Initialize with: ') + chalk.cyan('ux-ingka constitution init\n'));
         return;
       }
 
@@ -98,7 +98,7 @@ program
     }
   });
 
-// ingvar constitution add
+// ux-ingka constitution add
 program
   .command('add')
   .description('Add a new constitutional principle')
@@ -136,7 +136,7 @@ program
     }
   });
 
-// ingvar constitution remove
+// ux-ingka constitution remove
 program
   .command('remove <name>')
   .description('Remove a constitutional principle')
@@ -151,7 +151,7 @@ program
     }
   });
 
-// ingvar constitution update
+// ux-ingka constitution update
 program
   .command('update <name>')
   .description('Update a constitutional principle')
