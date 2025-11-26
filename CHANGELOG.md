@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🔧 Bug Fixes
 
 - **Fixed Spark ENOENT Error (#20):** Template-main directory was excluded from npm package
-  - Removed `template-main/` from `.npmignore` 
+  - Removed `template-main/` from `.npmignore`
   - Added `template-main/` to `package.json` files array
   - Spark generator now works correctly after npm install
 
@@ -39,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🏷️ Issues Closed
 
 - Closes #19: CWDS component packages not available from npm registry
-- Closes #20: Spark generator fails with ENOENT template-main error  
+- Closes #20: Spark generator fails with ENOENT template-main error
 - Closes #21: Ingka icons not installed or documented properly
 - Closes #22: CWDS component templates have duplicate exports and syntax errors
 - Closes #23: Documentation unclear on Skapa vs CWDS component installation

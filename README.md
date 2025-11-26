@@ -116,7 +116,7 @@ Named after IKEA founder **Ingvar Kamprad**, this toolkit brings professional de
 
 
 ---
-   
+
 ### 🎯 Core Capabilities
 
 1. **🇸🇪 IKEA Design System Integration**
