@@ -7,6 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 # Changelog
 
+## [6.8.6] - 2025-11-26
+
+### 🔧 Bug Fixes
+
+- **Fixed Spark ENOENT Error (#20):** Template-main directory was excluded from npm package
+  - Removed `template-main/` from `.npmignore` 
+  - Added `template-main/` to `package.json` files array
+  - Spark generator now works correctly after npm install
+
+- **Fixed CWDS Template Syntax Error (#22):** GlobalHeader.tsx had JSX comment error
+  - Fixed line 220: `/* Avatar */}` → `{/* Avatar */}`
+  - All CWDS templates now pass TypeScript/JSX validation
+
+### 📝 Documentation (Closes #19, #21, #23)
+
+- **Added Component Availability Matrix:** Clear table showing what's bundled vs templates
+  - Skapa: 64 components, bundled in npm, ready to import
+  - CWDS: 6 templates, NOT bundled, copy manually
+  - Icons: Bundled as @ingka/ssr-icon
+
+- **Clarified CWDS Installation:** Updated templates/cwds-components/README.md
+  - Added prominent warning that CWDS is templates-only
+  - Added comparison table (Skapa vs CWDS)
+  - Added quick installation instructions
+
+- **Icons Documentation:** Clarified that @ingka/ssr-icon is bundled
+  - Referenced INGKA_ICON_MIGRATION.md for path changes
+  - CWDS templates use inline SVGs as fallback (no npm dependency)
+
+### 🏷️ Issues Closed
+
+- Closes #19: CWDS component packages not available from npm registry
+- Closes #20: Spark generator fails with ENOENT template-main error  
+- Closes #21: Ingka icons not installed or documented properly
+- Closes #22: CWDS component templates have duplicate exports and syntax errors
+- Closes #23: Documentation unclear on Skapa vs CWDS component installation
+
 ## [6.8.5] - 2025-11-07
 
 ### 🔧 Critical Fixes

@@ -235,7 +235,7 @@ export const GlobalHeader: React.FC<GlobalHeaderProps> = ({
               gap: '8px'
             }}
           >
-            /* Avatar */}
+            {/* Avatar */}
             <div style={{
               width: '40px',
               height: '40px',

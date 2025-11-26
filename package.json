@@ -1,6 +1,6 @@
 {
   "name": "ingvar-kit",
-  "version": "6.8.5",
+  "version": "6.8.6",
   "description": "AI-powered workflow automation with IKEA design systems (Ingka Skapa & CWDS). Multi-agent orchestration, spec-first development, and rapid app generation.",
   "main": "dist/index.js",
   "bin": {
@@ -77,6 +77,7 @@
     "lib/utils/",
     "lib/banner.js",
     "lib/copilot-instructions-template.js",
+    "template-main/",
     "templates/",
     "docs/guides/DESIGN_GUIDELINES.md",
     "scripts/postinstall.js",

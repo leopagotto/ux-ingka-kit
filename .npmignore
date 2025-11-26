@@ -21,7 +21,7 @@ lib/skapa-components/dist/
 lib/skapa-components/node_modules/
 spark-apps/
 packages/
-template-main/
+# template-main/ is REQUIRED for Spark generator - DO NOT EXCLUDE
 coverage/
 
 # Documentation (except guides)

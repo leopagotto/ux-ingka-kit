@@ -1,8 +1,35 @@
 # CWDS Component Templates
 
+> **⚠️ IMPORTANT: These are TEMPLATES, not npm packages!**
+>
+> CWDS components are **NOT available on npm**. They are TypeScript/React templates
+> that you copy to your project and customize. This is different from Skapa components
+> which are bundled with ingvar-kit.
+
 > **Source of Truth**: Official IKEA Ingka Co-worker Design Components (Skapa + Figma)
 > **JSON Specifications**: Extracted from 73 Skapa screenshots via OCR
 > **Last Updated**: 2025-11-02
+
+## 🆚 Skapa vs CWDS: Key Differences
+
+| Feature | Skapa Components | CWDS Templates |
+|---------|-----------------|----------------|
+| **Availability** | ✅ Bundled in ingvar-kit | ❌ Templates only (copy to project) |
+| **Installation** | `import { Button } from 'ingvar-kit/skapa'` | Copy files manually |
+| **Count** | 64 components | 6 templates |
+| **Use Case** | Customer-facing apps | Internal co-worker tools |
+| **Customization** | Use as-is | Full source, modify freely |
+| **Updates** | npm update | Manual re-copy |
+
+## 🚀 Quick Installation
+
+```bash
+# Copy CWDS templates to your project
+cp -r node_modules/ingvar-kit/templates/cwds-components/* src/components/cwds/
+
+# Or use the CLI (interactive)
+ingvar cwds install
+```
 
 ## Overview
 

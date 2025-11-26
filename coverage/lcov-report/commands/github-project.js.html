@@ -1251,8 +1251,8 @@ async function <span class="fstat-no" title="function not covered" >githubProjec
   } else {
 <span class="cstat-no" title="statement not covered" >    console.log(chalk.red(`\n❌ Unknown action: ${action}\n`));</span>
 <span class="cstat-no" title="statement not covered" >    console.log(chalk.gray('Available actions:'));</span>
-<span class="cstat-no" title="statement not covered" >    console.log(chalk.gray('  leo github project setup  - Configure project integration'));</span>
-<span class="cstat-no" title="statement not covered" >    console.log(chalk.gray('  leo github project test   - Test project assignment\n'));</span>
+<span class="cstat-no" title="statement not covered" >    console.log(chalk.gray('  ingvar github project setup  - Configure project integration'));</span>
+<span class="cstat-no" title="statement not covered" >    console.log(chalk.gray('  ingvar github project test   - Test project assignment\n'));</span>
 <span class="cstat-no" title="statement not covered" >    process.exit(1);</span>
   }
 }
@@ -1546,7 +1546,7 @@ jobs:
 <span class="cstat-no" title="statement not covered" >      workflowSpinner.succeed(`Workflow updated (using ${isOrgRepo ? 'GITHUB_TOKEN' : 'GH_PROJECT_TOKEN'})`);</span>
 <span class="cstat-no" title="statement not covered" >      console.log(chalk.gray(`  → ${workflowPath}\n`));</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      workflowSpinner.warn('Workflow file not found (may need to run leo init first)');</span>
+<span class="cstat-no" title="statement not covered" >      workflowSpinner.warn('Workflow file not found (may need to run ingvar init first)');</span>
     }
   } catch (error) {
 <span class="cstat-no" title="statement not covered" >    workflowSpinner.fail('Failed to update workflow');</span>
@@ -1584,9 +1584,9 @@ GITHUB_PROJECT_OWNER_TYPE=${isOrgRepo ? 'org' : 'user'}
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('Next steps:\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  1. Test the integration:'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     leo github project test\n'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     ingvar github project test\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  2. Create an issue to verify auto-assignment:'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     leo issue\n'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     ingvar issue\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  3. Check GitHub Actions runs:'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     gh run list --limit 5\n'));</span>
 &nbsp;
@@ -1716,7 +1716,7 @@ async function <span class="fstat-no" title="function not covered" >testGitHubPr
   const envPath = <span class="cstat-no" title="statement not covered" >path.join(process.cwd(), '.env');</span>
 <span class="cstat-no" title="statement not covered" >  if (!await fs.pathExists(envPath)) {</span>
 <span class="cstat-no" title="statement not covered" >    console.log(chalk.yellow('⚠️  No .env file found. Run setup first:\n'));</span>
-<span class="cstat-no" title="statement not covered" >    console.log(chalk.cyan('  leo github project setup\n'));</span>
+<span class="cstat-no" title="statement not covered" >    console.log(chalk.cyan('  ingvar github project setup\n'));</span>
 <span class="cstat-no" title="statement not covered" >    process.exit(1);</span>
   }
 &nbsp;
@@ -1747,7 +1747,7 @@ async function <span class="fstat-no" title="function not covered" >testGitHubPr
     } else {
 <span class="cstat-no" title="statement not covered" >      secretsSpinner.fail('PROJECT_URL secret not found');</span>
 <span class="cstat-no" title="statement not covered" >      console.log(chalk.yellow('\n💡 Run setup again to configure secrets:\n'));</span>
-<span class="cstat-no" title="statement not covered" >      console.log(chalk.cyan('  leo github project setup\n'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.cyan('  ingvar github project setup\n'));</span>
 <span class="cstat-no" title="statement not covered" >      return;</span>
     }
   } catch (error) {
@@ -1767,11 +1767,11 @@ async function <span class="fstat-no" title="function not covered" >testGitHubPr
     } else {
 <span class="cstat-no" title="statement not covered" >      workflowSpinner.warn('Workflow file needs updates');</span>
 <span class="cstat-no" title="statement not covered" >      console.log(chalk.yellow('\n💡 Run setup to update workflow:\n'));</span>
-<span class="cstat-no" title="statement not covered" >      console.log(chalk.cyan('  leo github project setup\n'));</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.cyan('  ingvar github project setup\n'));</span>
     }
   } else {
 <span class="cstat-no" title="statement not covered" >    workflowSpinner.fail('Workflow file not found');</span>
-<span class="cstat-no" title="statement not covered" >    console.log(chalk.yellow('\n💡 Run leo init to install workflows\n'));</span>
+<span class="cstat-no" title="statement not covered" >    console.log(chalk.yellow('\n💡 Run ingvar init to install workflows\n'));</span>
   }
 &nbsp;
   // Test 3: Check recent workflow runs
@@ -1804,7 +1804,7 @@ async function <span class="fstat-no" title="function not covered" >testGitHubPr
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.green('\n✅ Integration test complete!\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('Next steps:\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  1. Create a test issue:'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     leo issue\n'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('     ingvar issue\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  2. Check if it was added to the project:'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan(`     open ${projectUrl}\n`));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  3. View workflow run details:'));</span>
@@ -1819,7 +1819,7 @@ async function <span class="fstat-no" title="function not covered" >testGitHubPr
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-01T22:25:48.623Z
+                at 2025-11-05T22:37:39.567Z
             </div>
         <script src="../prettify.js"></script>
         <script>

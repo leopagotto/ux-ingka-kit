@@ -1068,7 +1068,7 @@ async function <span class="fstat-no" title="function not covered" >agentCommand
     case 'enable':
 <span class="cstat-no" title="statement not covered" >      if (!agentName) {</span>
 <span class="cstat-no" title="statement not covered" >        console.log(chalk.red('Error: Agent name required'));</span>
-<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('Usage: leo agent enable &lt;agent&gt;'));</span>
+<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('Usage: ingvar agent enable &lt;agent&gt;'));</span>
 <span class="cstat-no" title="statement not covered" >        process.exit(1);</span>
       }
 <span class="cstat-no" title="statement not covered" >      return await enableAgentCommand(agentName, options);</span>
@@ -1076,7 +1076,7 @@ async function <span class="fstat-no" title="function not covered" >agentCommand
     case 'disable':
 <span class="cstat-no" title="statement not covered" >      if (!agentName) {</span>
 <span class="cstat-no" title="statement not covered" >        console.log(chalk.red('Error: Agent name required'));</span>
-<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('Usage: leo agent disable &lt;agent&gt;'));</span>
+<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('Usage: ingvar agent disable &lt;agent&gt;'));</span>
 <span class="cstat-no" title="statement not covered" >        process.exit(1);</span>
       }
 <span class="cstat-no" title="statement not covered" >      return await disableAgentCommand(agentName, options);</span>
@@ -1084,7 +1084,7 @@ async function <span class="fstat-no" title="function not covered" >agentCommand
     case 'info':
 <span class="cstat-no" title="statement not covered" >      if (!agentName) {</span>
 <span class="cstat-no" title="statement not covered" >        console.log(chalk.red('Error: Agent name required'));</span>
-<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('Usage: leo agent info &lt;agent&gt;'));</span>
+<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('Usage: ingvar agent info &lt;agent&gt;'));</span>
 <span class="cstat-no" title="statement not covered" >        process.exit(1);</span>
       }
 <span class="cstat-no" title="statement not covered" >      return await showAgentInfo(agentName, options);</span>
@@ -1169,10 +1169,10 @@ async function <span class="fstat-no" title="function not covered" >listAgents(<
 &nbsp;
   // Show commands
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('Commands:'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent enable &lt;agent&gt;   Enable a specialized agent'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent disable &lt;agent&gt;  Disable a specialized agent'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent info &lt;agent&gt;     Show detailed agent information'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent sync             Regenerate AI instruction files\n'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent enable &lt;agent&gt;   Enable a specialized agent'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent disable &lt;agent&gt;  Disable a specialized agent'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent info &lt;agent&gt;     Show detailed agent information'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent sync             Regenerate AI instruction files\n'));</span>
 }
 &nbsp;
 /**
@@ -1221,7 +1221,7 @@ async function <span class="fstat-no" title="function not covered" >enableAgentC
 <span class="cstat-no" title="statement not covered" >      if (shouldSync) {</span>
 <span class="cstat-no" title="statement not covered" >        await syncAgents({ silent: true });</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('\n💡 Run'), chalk.cyan('leo agent sync'), chalk.gray('later to update AI files\n'));</span>
+<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('\n💡 Run'), chalk.cyan('ingvar agent sync'), chalk.gray('later to update AI files\n'));</span>
       }
     }
   } catch (error) {
@@ -1277,7 +1277,7 @@ async function <span class="fstat-no" title="function not covered" >disableAgent
 <span class="cstat-no" title="statement not covered" >      if (shouldSync) {</span>
 <span class="cstat-no" title="statement not covered" >        await syncAgents({ silent: true });</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('\n💡 Run'), chalk.cyan('leo agent sync'), chalk.gray('later to update AI files\n'));</span>
+<span class="cstat-no" title="statement not covered" >        console.log(chalk.gray('\n💡 Run'), chalk.cyan('ingvar agent sync'), chalk.gray('later to update AI files\n'));</span>
       }
     }
   } catch (error) {
@@ -1426,10 +1426,10 @@ async function <span class="fstat-no" title="function not covered" >showAgentInf
 <span class="cstat-no" title="statement not covered" >  if (!info.alwaysEnabled) {</span>
 <span class="cstat-no" title="statement not covered" >    if (isEnabled) {</span>
 <span class="cstat-no" title="statement not covered" >      console.log(chalk.gray('Commands:'));</span>
-<span class="cstat-no" title="statement not covered" >      console.log(chalk.gray(`  leo agent disable ${agentName}  Disable this agent`));</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.gray(`  ingvar agent disable ${agentName}  Disable this agent`));</span>
     } else {
 <span class="cstat-no" title="statement not covered" >      console.log(chalk.gray('Commands:'));</span>
-<span class="cstat-no" title="statement not covered" >      console.log(chalk.gray(`  leo agent enable ${agentName}   Enable this agent`));</span>
+<span class="cstat-no" title="statement not covered" >      console.log(chalk.gray(`  ingvar agent enable ${agentName}   Enable this agent`));</span>
     }
 <span class="cstat-no" title="statement not covered" >    console.log();</span>
   }
@@ -1494,7 +1494,7 @@ async function <span class="fstat-no" title="function not covered" >syncAgents(<
 function <span class="fstat-no" title="function not covered" >showHelp(</span>) {
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.cyan('\n🎯 LEO Agent Command\n'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.bold('Usage:'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log('  leo agent &lt;subcommand&gt; [agent] [options]\n');</span>
+<span class="cstat-no" title="statement not covered" >  console.log('  ingvar agent &lt;subcommand&gt; [agent] [options]\n');</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.bold('Subcommands:'));</span>
 <span class="cstat-no" title="statement not covered" >  console.log('  list                   List all agents and their status');</span>
@@ -1512,11 +1512,11 @@ function <span class="fstat-no" title="function not covered" >showHelp(</span>) 
 <span class="cstat-no" title="statement not covered" >  console.log('  documentation          README, API docs, guides\n');</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  console.log(chalk.bold('Examples:'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent list'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent enable frontend'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent disable devops'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent info backend'));</span>
-<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  leo agent sync\n'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent list'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent enable frontend'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent disable devops'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent info backend'));</span>
+<span class="cstat-no" title="statement not covered" >  console.log(chalk.gray('  ingvar agent sync\n'));</span>
 }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >module.exports = agentCommand;</span>
@@ -1528,7 +1528,7 @@ function <span class="fstat-no" title="function not covered" >showHelp(</span>) 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-01T22:25:48.623Z
+                at 2025-11-05T22:37:39.567Z
             </div>
         <script src="../prettify.js"></script>
         <script>

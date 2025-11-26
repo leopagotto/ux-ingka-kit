@@ -2,6 +2,12 @@
 
 ![Ingvar Kit](docs/assets/ingvar_kit_logo.png)
 
+<h1>Ingvar Kit</h1>
+
+<h3>AI-Powered Workflow Automation with IKEA Ingka Design System</h3>
+
+**Transform your development with multi-agent AI, rapid app generation, spec-first development, and the official IKEA design system—all from your terminal.**
+
 [![npm version](https://img.shields.io/npm/v/ingvar-kit.svg?style=flat-square&color=0051BA&logo=npm)](https://www.npmjs.com/package/ingvar-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-FFDA1A.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green?style=flat-square&logo=node.js)](https://nodejs.org)
@@ -9,10 +15,96 @@
 
 [Quick Start](#-quick-start) • [Features](#-features) • [IKEA Design System](#-ikea-ingka-design-system) • [Spark Generator](docs/SPARK.md) • [Documentation](docs/README.md)
 
-### AI-Powered Workflow Automation with IKEA Ingka Design System
-**Transform your development with multi-agent AI, rapid app generation, spec-first development, and the official IKEA design system—all from your terminal.**
+---
+
+## 🚀 Recent Updates
+
+### 🎉 **v6.8.6** - Bug Fixes & Documentation Clarity! 🎊
+
+**Released:** November 26, 2025
+
+**Bug Fixes:**
+
+- 🐛 **Fixed**: Spark ENOENT error - `template-main` now included in npm package (#20)
+- 🐛 **Fixed**: CWDS GlobalHeader.tsx JSX syntax error (#22)
+
+**Documentation Clarity:**
+
+- 📦 **Added**: Component Availability Matrix (see below) - clearly shows Skapa vs CWDS
+- 📝 **Clarified**: CWDS components are **templates only**, not npm packages (#19, #23)
+- 📝 **Documented**: Icons bundled as `@ingka/ssr-icon` (#21)
+
+**Closes:** GitHub issues #19, #20, #21, #22, #23
 
 ---
+
+## 📦 Component Availability Matrix
+
+> **Understanding what's bundled vs templates-only**
+
+| System | Components | Bundled in npm? | Installation | Use Case |
+|--------|-----------|-----------------|--------------|----------|
+| **Skapa** | 64 components | ✅ **YES** | `import { Button } from 'ingvar-kit/skapa'` | Customer-facing apps |
+| **CWDS** | 6 templates | ❌ **NO** (templates only) | Copy from `templates/cwds-components/` | Internal co-worker tools |
+| **Icons** | 800+ icons | ✅ **YES** | `import { Icon } from '@ingka/ssr-icon'` | Both Skapa & CWDS |
+
+### Skapa Components (✅ Bundled - Ready to Use)
+
+Ingvar Kit bundles **64 official @ingka/* components** directly. No additional installation required:
+
+\`\`\`typescript
+// Direct import - works immediately after installing ingvar-kit
+import { Button, Card, InputField } from 'ingvar-kit/skapa/ingka-direct';
+
+// Or use simplified wrappers
+import { Button, TextField } from 'ingvar-kit/skapa';
+\`\`\`
+
+**All 64 components include:** Accordion, Avatar, Badge, Banner, Breadcrumb, Button, Card, Carousel, Checkbox, Choice, Combobox, and 53 more...
+
+### CWDS Components (📋 Templates - Manual Setup)
+
+CWDS components are **NOT bundled** as npm packages. They are **TypeScript templates** you copy to your project:
+
+\`\`\`bash
+# Step 1: Copy templates to your project
+cp -r node_modules/ingvar-kit/templates/cwds-components/* src/components/cwds/
+
+# Step 2: Import the CSS tokens
+import './components/cwds/styles/cwds-tokens.css';
+
+# Step 3: Use the components
+import { GlobalHeader, NavigationMenu } from './components/cwds';
+\`\`\`
+
+**Available CWDS Templates:**
+- `GlobalHeader` - Top navigation bar with menu, search, notifications
+- `NavigationMenu` - Left sidebar navigation with expandable items
+- `AppSwitcher` - Modal for switching between IKEA internal apps
+- `Profile` - User profile dropdown with sign out
+- `BottomBarNavigation` - Mobile bottom navigation tabs
+
+**Why templates instead of npm packages?**
+- CWDS components compose @ingka/* primitives (you customize them)
+- No official `@ingka-group-digital/cwds-*` npm packages exist
+- Templates give you full control over implementation
+
+### Icons (@ingka/ssr-icon)
+
+Icons are bundled with ingvar-kit as `@ingka/ssr-icon`:
+
+\`\`\`typescript
+import { Icon } from '@ingka/ssr-icon';
+
+<Icon svg="arrow-clockwise" size="24px" colour="#111" />
+\`\`\`
+
+**⚠️ Note:** Icon paths changed in v11.1.0. See `INGKA_ICON_MIGRATION.md` in generated Spark apps.
+
+---
+
+</div>
+
 
 </div>
 <div align="left">
