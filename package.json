@@ -1,10 +1,10 @@
 {
-  "name": "ingvar-kit",
-  "version": "6.8.6",
+  "name": "ux-ingka-kit",
+  "version": "7.0.0",
   "description": "AI-powered workflow automation with IKEA design systems (Ingka Skapa & CWDS). Multi-agent orchestration, spec-first development, and rapid app generation.",
   "main": "dist/index.js",
   "bin": {
-    "ingvar": "bin/cli.js"
+    "ux-ingka": "bin/cli.js"
   },
   "exports": {
     ".": "./dist/index.js",
@@ -54,12 +54,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leopagotto/ingvar-kit.git"
+    "url": "git+https://github.com/leopagotto/ux-ingka-kit.git"
   },
   "bugs": {
-    "url": "https://github.com/leopagotto/ingvar-kit/issues"
+    "url": "https://github.com/leopagotto/ux-ingka-kit/issues"
   },
-  "homepage": "https://github.com/leopagotto/ingvar-kit#readme",
+  "homepage": "https://github.com/leopagotto/ux-ingka-kit#readme",
   "files": [
     "bin/cli.js",
     "lib/agents/",

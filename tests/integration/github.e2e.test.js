@@ -40,7 +40,7 @@ jest.mock('../../lib/team/github-api');describe('GitHub Integration E2E Tests', 
     mockAPI = {
       createProjectBoard: jest.fn().mockResolvedValue({
         id: 'P1',
-        name: 'Ingvar Kit Board',
+        name: 'UX Ingka Kit Board',
         columns: [
           { id: 'C1', name: 'discovery' },
           { id: 'C2', name: 'design' },
@@ -120,7 +120,7 @@ jest.mock('../../lib/team/github-api');describe('GitHub Integration E2E Tests', 
       const auth = new GitHubAuth('test_token');
       const api = new GitHubAPI(auth);
 
-      const board = await api.createProjectBoard('Ingvar Kit Board', [
+      const board = await api.createProjectBoard('UX Ingka Kit Board', [
         'discovery',
         'design',
         'development'
@@ -128,12 +128,12 @@ jest.mock('../../lib/team/github-api');describe('GitHub Integration E2E Tests', 
 
       // Then board should be created with columns
       expect(api.createProjectBoard).toHaveBeenCalledWith(
-        'Ingvar Kit Board',
+        'UX Ingka Kit Board',
         ['discovery', 'design', 'development']
       );
       expect(board).toEqual({
         id: 'P1',
-        name: 'Ingvar Kit Board',
+        name: 'UX Ingka Kit Board',
         columns: [
           { id: 'C1', name: 'discovery' },
           { id: 'C2', name: 'design' },

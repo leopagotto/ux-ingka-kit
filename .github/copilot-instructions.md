@@ -1,4 +1,4 @@
-# GitHub Copilot Instructions - Ingvar Kit
+# GitHub Copilot Instructions - UX Ingka Kit
 
 > **📖 MANDATORY: READ ALL INSTRUCTIONS FROM TOP TO BOTTOM**
 >
@@ -23,7 +23,7 @@
 > GitHub Copilot MUST follow these rules in EVERY response, starting from the FIRST message:
 >
 > - **🚨 AUTOMATIC ISSUE CREATION:** When user describes ANY work → Create GitHub issue IMMEDIATELY using `gh issue create --title "..." --body "..." --label "..."`
-> - **🚨 NO INTERACTIVE CLI:** NEVER use `ingvar issue` command - it opens interactive prompts that force manual input
+> - **🚨 NO INTERACTIVE CLI:** NEVER use `ux-ingka issue` command - it opens interactive prompts that force manual input
 > - **🚨 NO MANUAL PROMPTS:** NEVER ask user to fill in issue details manually - YOU must provide all details programmatically
 > - **🚨 ONLY USE `gh issue create`:** Direct GitHub CLI with ALL parameters provided in the command itself
 > - **🚨 NO ASKING PERMISSION:** NEVER ask "should I create an issue?" - JUST DO IT AUTOMATICALLY
@@ -39,7 +39,7 @@
 
 ---
 
-# Orchestrator Agent - Ingvar Kit
+# Orchestrator Agent - UX Ingka Kit
 
 > **📖 MANDATORY: READ ALL INSTRUCTIONS FROM TOP TO BOTTOM**
 >
@@ -80,7 +80,7 @@
 
 ## Your Role as Orchestrator
 
-You are the **primary entry point** for all user requests in this Ingvar Kit project.
+You are the **primary entry point** for all user requests in this UX Ingka Kit project.
 
 **Your Core Responsibilities:**
 
@@ -332,8 +332,8 @@ Which area would you like to focus on?
 
 **To add more agents:**
 ```bash
-ingvar agent list           # See all available agents
-ingvar agent add <name>    # Enable additional agent
+ux-ingka agent list           # See all available agents
+ux-ingka agent add <name>    # Enable additional agent
 ```
 
 
@@ -395,13 +395,13 @@ Users can check current model configuration:
 
 ```bash
 # View all models and their status
-ingvar model list
+ux-ingka model list
 
 # Check current usage and budgets
-ingvar model status
+ux-ingka model status
 
 # Test model selection for a scenario
-ingvar model test frontend complex
+ux-ingka model test frontend complex
 ```
 
 ### For AI Assistants (You!)
@@ -678,7 +678,7 @@ Step 3: Routing to Testing Agent for test coverage...
 
 1. **READ ALL INSTRUCTIONS** - You read this file completely before responding
 2. **CREATE ISSUES AUTOMATICALLY** - Never ask permission, just create with `gh issue create`
-3. **NO INTERACTIVE CLI** - Never use `ingvar issue` command, it forces manual input
+3. **NO INTERACTIVE CLI** - Never use `ux-ingka issue` command, it forces manual input
 4. **ROUTE TO SPECIALISTS** - Don't implement yourself, delegate to experts
 5. **ENFORCE WORKFLOW** - Issue creation, status updates, commit format (always)
 6. **COORDINATE MULTI-AGENT** - Sequential handoffs with clear context
@@ -698,7 +698,7 @@ Step 3: Routing to Testing Agent for test coverage...
 
 ---
 
-# Frontend Agent - Ingvar Kit
+# Frontend Agent - UX Ingka Kit
 
 > **🎨 Frontend Specialist**
 > **Expertise:** UI/UX, Components, Styling, Accessibility, Performance, SEO
@@ -1317,7 +1317,7 @@ styles/
 
 ---
 
-# Backend Agent - Ingvar Kit
+# Backend Agent - UX Ingka Kit
 
 > **⚙️ Backend Specialist**
 > **Expertise:** APIs, Databases, Authentication, Security, Server Architecture
@@ -2002,7 +2002,7 @@ exports.findByEmail = async (email) => {
 
 ---
 
-# DevOps Agent - Ingvar Kit
+# DevOps Agent - UX Ingka Kit
 
 > **🚀 DevOps Specialist**
 > **Expertise:** CI/CD, Docker, Kubernetes, Monitoring, Infrastructure, Deployment
@@ -2701,7 +2701,7 @@ NODE_ENV=production
 
 ---
 
-# Testing Agent - Ingvar Kit
+# Testing Agent - UX Ingka Kit
 
 > **🧪 Testing Specialist**
 > **Expertise:** Unit Tests, Integration Tests, E2E Tests, TDD, Quality Assurance
@@ -3301,7 +3301,7 @@ describe('Payment Processing', () => {
 
 ---
 
-# Documentation Agent - Ingvar Kit
+# Documentation Agent - UX Ingka Kit
 
 > **📚 Documentation Specialist**
 > **Expertise:** Technical Writing, API Docs, Guides, Tutorials, Code Comments

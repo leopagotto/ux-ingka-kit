@@ -1,12 +1,12 @@
 # Installation Guide
 
-> **Get Ingvar Kit v6.8.5 up and running in < 30 seconds**
+> **Get UX Ingka Kit v6.8.5 up and running in < 30 seconds**
 
 > **✨ NEW in v6.8.5:** Critical Spark bug fixed! All v6.8.4 features now working correctly. Complete rebranding from "leo" to "ingvar".
 
 ## 🎯 Prerequisites
 
-Before installing Ingvar Kit, ensure you have:
+Before installing UX Ingka Kit, ensure you have:
 
 ### Required
 
@@ -29,12 +29,12 @@ Before installing Ingvar Kit, ensure you have:
 **One command - complete setup with v6.8.5 features!**
 
 ```bash
-INGVAR_AUTO_INIT=true npm install -g ingvar-kit@6.8.5
+INGVAR_AUTO_INIT=true npm install -g ux-ingka-kit@6.8.5
 ```
 
 **What this does:**
 
-- ✅ Installs Ingvar Kit v6.8.5
+- ✅ Installs UX Ingka Kit v6.8.5
 - ✅ Auto-configures GitHub integration
 - ✅ **Component System Strategy** ✨ (v6.8.0)
 - ✅ **Critical Spark Bug Fix** 🐛 (v6.8.5)
@@ -66,7 +66,7 @@ INGVAR_AUTO_INIT=true npm install -g ingvar-kit@6.8.5
 Install Ingvar globally to use across all projects:
 
 ```bash
-npm install -g ingvar-kit@6.8.5
+npm install -g ux-ingka-kit@6.8.5
 ```
 
 **Verify installation:**
@@ -94,7 +94,7 @@ ingvar --help
 Use Ingvar without installing:
 
 ```bash
-npx ingvar-kit init
+npx ux-ingka-kit init
 ```
 
 **When to use:**
@@ -116,8 +116,8 @@ For contributors or cutting-edge features:
 
 ```bash
 # Clone the repository
-git clone https://github.com/leopagotto/ingvar-kit.git
-cd ingvar-kit
+git clone https://github.com/leopagotto/ux-ingka-kit.git
+cd ux-ingka-kit
 
 # Install dependencies
 npm install
@@ -209,10 +209,10 @@ gh auth status
 cd your-project
 
 # Initialize Ingvar
-ingvar init
+ux-ingka init
 ```
 
-### What Happens During `ingvar init`
+### What Happens During `ux-ingka init`
 
 1. **Welcome Banner** 🦁
 
@@ -307,7 +307,7 @@ ingvar docs
 
 ### Overview
 
-Ingvar Kit includes a powerful multi-agent system that routes tasks to specialized AI agents based on task type. **All 6 agents are enabled by default** - you can customize this during setup or later.
+UX Ingka Kit includes a powerful multi-agent system that routes tasks to specialized AI agents based on task type. **All 6 agents are enabled by default** - you can customize this during setup or later.
 
 ### Available Agents
 
@@ -324,7 +324,7 @@ Ingvar Kit includes a powerful multi-agent system that routes tasks to specializ
 
 #### Option 1: During Initialization
 
-During `ingvar init`, you'll see a prompt like this:
+During `ux-ingka init`, you'll see a prompt like this:
 
 ```
 🎯 Multi-Agent Configuration
@@ -414,10 +414,10 @@ zsh: command not found: leo
 
 ```bash
 # Check if installed globally
-npm list -g ingvar-kit
+npm list -g ux-ingka-kit
 
 # If not, install again
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 
 # Check npm global path
 npm config get prefix
@@ -438,14 +438,14 @@ EACCES: permission denied
 
 ```bash
 # Option 1: Use sudo (not recommended)
-sudo npm install -g ingvar-kit
+sudo npm install -g ux-ingka-kit
 
 # Option 2: Fix npm permissions (recommended)
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 ```
 
 ---
@@ -506,7 +506,7 @@ nvm use 20
 ingvar --version
 
 # Update globally
-npm update -g ingvar-kit
+npm update -g ux-ingka-kit
 
 # Verify new version
 ingvar --version
@@ -515,7 +515,7 @@ ingvar --version
 ### Update from Source
 
 ```bash
-cd ingvar-kit
+cd ux-ingka-kit
 git pull origin main
 npm install
 npm link
@@ -528,7 +528,7 @@ npm link
 ### Remove Global Installation
 
 ```bash
-npm uninstall -g ingvar-kit
+npm uninstall -g ux-ingka-kit
 ```
 
 ### Clean Up Project Files
@@ -550,7 +550,7 @@ After installation, verify everything works:
 
 - [ ] `ingvar --version` shows correct version
 - [ ] `gh auth status` shows authenticated
-- [ ] `ingvar init` completes successfully
+- [ ] `ux-ingka init` completes successfully
 - [ ] `ingvar status` shows project info
 - [ ] `ingvar health` passes all checks
 - [ ] GitHub Copilot is enabled in VS Code
@@ -570,8 +570,8 @@ After installation:
 
 ## 💬 Need Help?
 
-- **Issues:** [Report installation problems](https://github.com/leopagotto/ingvar-kit/issues)
-- **Discussions:** [Ask questions](https://github.com/leopagotto/ingvar-kit/discussions)
+- **Issues:** [Report installation problems](https://github.com/leopagotto/ux-ingka-kit/issues)
+- **Discussions:** [Ask questions](https://github.com/leopagotto/ux-ingka-kit/discussions)
 - **Troubleshooting:** [Common issues](./Troubleshooting)
 
 ---

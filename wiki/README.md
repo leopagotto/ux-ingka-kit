@@ -1,6 +1,6 @@
-# Ingvar Kit Wiki Content
+# UX Ingka Kit Wiki Content
 
-This directory contains markdown files for the Ingvar Kit GitHub Wiki.
+This directory contains markdown files for the UX Ingka Kit GitHub Wiki.
 
 ## 📚 Wiki Pages
 
@@ -17,14 +17,14 @@ This directory contains markdown files for the Ingvar Kit GitHub Wiki.
 
 1. **Enable Wiki**
 
-   - Go to: https://github.com/leopagotto/ingvar-kit/settings
+   - Go to: https://github.com/leopagotto/ux-ingka-kit/settings
    - Scroll to "Features"
    - Check ✅ "Wikis"
    - Click "Save changes"
 
 2. **Create Initial Page**
 
-   - Go to: https://github.com/leopagotto/ingvar-kit/wiki
+   - Go to: https://github.com/leopagotto/ux-ingka-kit/wiki
    - Click "Create the first page"
    - Click "Save Page" (creates Home page)
 
@@ -50,14 +50,14 @@ This directory contains markdown files for the Ingvar Kit GitHub Wiki.
 1. **Clone the Wiki Repository**
 
    ```bash
-   git clone https://github.com/leopagotto/ingvar-kit.wiki.git
-   cd ingvar-kit.wiki
+   git clone https://github.com/leopagotto/ux-ingka-kit.wiki.git
+   cd ux-ingka-kit.wiki
    ```
 
 2. **Copy Wiki Files**
 
    ```bash
-   cp ../ingvar-kit/wiki/*.md .
+   cp ../ux-ingka-kit/wiki/*.md .
    ```
 
 3. **Commit and Push**
@@ -75,7 +75,7 @@ Create a script to upload all pages:
 #!/bin/bash
 # upload-wiki.sh
 
-WIKI_REPO="https://github.com/leopagotto/ingvar-kit.wiki.git"
+WIKI_REPO="https://github.com/leopagotto/ux-ingka-kit.wiki.git"
 TEMP_DIR="./temp-wiki"
 
 # Clone wiki
@@ -252,14 +252,14 @@ echo "✓ Wiki pages uploaded!"
 ### Code Blocks
 
 \`\`\`bash
-ingvar init
+ux-ingka init
 \`\`\`
 
 ### Tables
 
 | Command       | Purpose    |
 | ------------- | ---------- |
-| `ingvar init` | Initialize |
+| `ux-ingka init` | Initialize |
 
 ### Callouts
 

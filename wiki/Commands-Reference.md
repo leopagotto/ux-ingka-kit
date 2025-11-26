@@ -1,17 +1,17 @@
 # Commands Reference
 
-> **Complete reference for all Ingvar Kit v6.8.5 commands**
+> **Complete reference for all UX Ingka Kit v6.8.5 commands**
 
 ## 🎯 Command Overview
 
 | Command            | Purpose                                   | Interactive | Version |
 | ------------------ | ----------------------------------------- | ----------- | ------- |
-| `ingvar init`      | Initialize Ingvar in project              | ✅ Yes      | v1.0.0  |
+| `ux-ingka init`      | Initialize Ingvar in project              | ✅ Yes      | v1.0.0  |
 | `ingvar agent`     | Manage specialized agents                 | ✅ Yes      | v4.0.0  |
 | `ingvar github`    | Configure repository settings             | ✅ Yes      | v4.0.0  |
 | `ingvar model`     | Manage AI model selection 🎉 NEW (v4.1.1) | ✅ Yes      | v4.1.1  |
 | `ingvar ai`        | Manage AI assistants                      | ✅ Yes      | v3.0.0  |
-| `ingvar issue`     | Create issue interactively                | ✅ Yes      | v1.0.0  |
+| `ux-ingka issue`     | Create issue interactively                | ✅ Yes      | v1.0.0  |
 | `ingvar labels`    | Configure GitHub labels                   | ✅ Yes      | v1.0.0  |
 | `ingvar vscode`    | Setup VS Code integration                 | ✅ Yes      | v1.0.0  |
 | `ingvar config`    | Manage configuration                      | ✅ Yes      | v2.6.0  |
@@ -26,14 +26,14 @@
 
 ## 📋 Detailed Command Reference
 
-### `ingvar init`
+### `ux-ingka init`
 
 Initialize Ingvar Workflow in your project.
 
 **Usage:**
 
 ```bash
-ingvar init [options]
+ux-ingka init [options]
 ```
 
 **What It Does:**
@@ -54,16 +54,16 @@ ingvar init [options]
 **Options:**
 
 ```bash
-ingvar init --skip-labels    # Skip label configuration
-ingvar init --force          # Overwrite existing files
-ingvar init --help           # Show help for init command
+ux-ingka init --skip-labels    # Skip label configuration
+ux-ingka init --force          # Overwrite existing files
+ux-ingka init --help           # Show help for init command
 ```
 
 **Example:**
 
 ```bash
 cd my-project
-ingvar init
+ux-ingka init
 ```
 
 **Output Structure:**
@@ -182,7 +182,7 @@ ingvar ai sync
 
 **When to Use:**
 
-- After upgrading Ingvar Kit
+- After upgrading UX Ingka Kit
 - After modifying workflow standards
 - To update all AI files at once
 
@@ -377,7 +377,7 @@ ingvar agent sync
 
 - After manually editing `.ingvarrc.json`
 - After enabling/disabling agents (if you skipped auto-sync)
-- After updating Ingvar Kit version
+- After updating UX Ingka Kit version
 
 **Available Agents:**
 
@@ -439,8 +439,8 @@ ingvar github status
 ```
 📊 GitHub Repository Settings
 
-Repository: leopagotto/ingvar-kit
-URL: https://github.com/leopagotto/ingvar-kit
+Repository: leopagotto/ux-ingka-kit
+URL: https://github.com/leopagotto/ux-ingka-kit
 
 ⚙️  Repository Settings:
 
@@ -508,7 +508,7 @@ ingvar github setup
 # 📊 Current Settings:
 #   Delete branch on merge: ○ Disabled
 #
-# ✨ Recommended Settings (Ingvar Kit):
+# ✨ Recommended Settings (UX Ingka Kit):
 #   Delete branch on merge: ✓ Enabled (keep repo clean)
 #
 # ⚠️  1 setting(s) need to be updated:
@@ -693,14 +693,14 @@ Model selection settings are in `.ingvarrc.json`:
 
 ---
 
-### `ingvar issue`
+### `ux-ingka issue`
 
 Create a GitHub issue interactively.
 
 **Usage:**
 
 ```bash
-ingvar issue
+ux-ingka issue
 ```
 
 **Interactive Flow:**
@@ -743,7 +743,7 @@ ingvar issue
 **Example:**
 
 ```bash
-ingvar issue
+ux-ingka issue
 # Follow prompts...
 # → Issue #42 created: "Add dark mode support"
 ```
@@ -1026,7 +1026,7 @@ Available for all commands:
 **Examples:**
 
 ```bash
-ingvar init --help
+ux-ingka init --help
 ingvar status --verbose
 ingvar labels --quiet
 ```
@@ -1039,13 +1039,13 @@ Some commands can be chained:
 
 ```bash
 # Initialize and configure labels
-ingvar init && ingvar labels
+ux-ingka init && ingvar labels
 
 # Health check before status
 ingvar health && ingvar status
 
 # Full setup
-ingvar init && ingvar labels && ingvar vscode
+ux-ingka init && ingvar labels && ingvar vscode
 ```
 
 ---
@@ -1056,7 +1056,7 @@ ingvar init && ingvar labels && ingvar vscode
 
 ```bash
 cd new-project
-ingvar init              # Initialize Ingvar
+ux-ingka init              # Initialize Ingvar
 ingvar labels            # Configure labels
 # Start coding - Copilot handles the rest!
 ```
@@ -1065,14 +1065,14 @@ ingvar labels            # Configure labels
 
 ```bash
 cd existing-project
-ingvar init --skip-labels  # Keep existing labels
+ux-ingka init --skip-labels  # Keep existing labels
 ingvar vscode             # Add Copilot instructions
 ```
 
 ### Create Issue Manually
 
 ```bash
-ingvar issue
+ux-ingka issue
 # Follow prompts to create structured issue
 ```
 
@@ -1098,7 +1098,7 @@ gh issue create --title "..." --body "..." --label "bug,p1"
 
 ```bash
 # Add to ~/.bashrc or ~/.zshrc
-alias li="ingvar init"
+alias li="ux-ingka init"
 alias ls="ingvar status"
 alias lh="ingvar health"
 ```
@@ -1107,7 +1107,7 @@ alias lh="ingvar health"
 
 ```bash
 # Use npx for one-time setup in CI
-npx ingvar-kit init --skip-labels --force
+npx ux-ingka-kit init --skip-labels --force
 ```
 
 ### 4. Quick Health Check
@@ -1125,10 +1125,10 @@ ingvar health | grep "✗"    # Show only failed checks
 
 ```bash
 # Check if installed
-npm list -g ingvar-kit
+npm list -g ux-ingka-kit
 
 # Reinstall
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 ```
 
 ### Permission Errors

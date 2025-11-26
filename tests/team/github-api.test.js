@@ -129,7 +129,7 @@ describe('GitHubAPI', () => {
   describe('createIssue', () => {
     test('should create issue', async () => {
       const issue = await api.createIssue(
-        'leopagotto/ingvar-kit',
+        'leopagotto/ux-ingka-kit',
         'Build Dashboard',
         'Create dashboard UI'
       );
@@ -143,17 +143,17 @@ describe('GitHubAPI', () => {
 
     test('should include repository in URL', async () => {
       const issue = await api.createIssue(
-        'leopagotto/ingvar-kit',
+        'leopagotto/ux-ingka-kit',
         'Test',
         'Test issue'
       );
 
-      expect(issue.url).toContain('leopagotto/ingvar-kit');
+      expect(issue.url).toContain('leopagotto/ux-ingka-kit');
     });
 
     test('should add labels to issue', async () => {
       const issue = await api.createIssue(
-        'leopagotto/ingvar-kit',
+        'leopagotto/ux-ingka-kit',
         'Test',
         'Test',
         ['bug', 'urgent']
@@ -165,7 +165,7 @@ describe('GitHubAPI', () => {
     test('should set created_at timestamp', async () => {
       const before = new Date();
       const issue = await api.createIssue(
-        'leopagotto/ingvar-kit',
+        'leopagotto/ux-ingka-kit',
         'Test',
         'Test'
       );
@@ -189,7 +189,7 @@ describe('GitHubAPI', () => {
 
   describe('updateIssue', () => {
     test('should update issue', async () => {
-      const updated = await api.updateIssue('leopagotto/ingvar-kit', 42, {
+      const updated = await api.updateIssue('leopagotto/ux-ingka-kit', 42, {
         state: 'closed',
         labels: ['complete'],
       });
@@ -200,7 +200,7 @@ describe('GitHubAPI', () => {
     });
 
     test('should update only specified fields', async () => {
-      const updated = await api.updateIssue('leopagotto/ingvar-kit', 42, {
+      const updated = await api.updateIssue('leopagotto/ux-ingka-kit', 42, {
         title: 'Updated Title',
       });
 
@@ -208,7 +208,7 @@ describe('GitHubAPI', () => {
     });
 
     test('should set updated_at timestamp', async () => {
-      const updated = await api.updateIssue('leopagotto/ingvar-kit', 42, {});
+      const updated = await api.updateIssue('leopagotto/ux-ingka-kit', 42, {});
 
       expect(updated.updated_at).toBeDefined();
     });
@@ -226,7 +226,7 @@ describe('GitHubAPI', () => {
 
   describe('addLabel', () => {
     test('should add labels to issue', async () => {
-      const labels = await api.addLabel('leopagotto/ingvar-kit', 42, [
+      const labels = await api.addLabel('leopagotto/ux-ingka-kit', 42, [
         'bug',
         'urgent',
       ]);
@@ -238,11 +238,11 @@ describe('GitHubAPI', () => {
 
     test('should throw error for empty labels', async () => {
       await expect(
-        api.addLabel('leopagotto/ingvar-kit', 42, [])
+        api.addLabel('leopagotto/ux-ingka-kit', 42, [])
       ).rejects.toThrow('Labels must be a non-empty array');
 
       await expect(
-        api.addLabel('leopagotto/ingvar-kit', 42, null)
+        api.addLabel('leopagotto/ux-ingka-kit', 42, null)
       ).rejects.toThrow('Labels must be a non-empty array');
     });
 
@@ -305,7 +305,7 @@ describe('GitHubAPI', () => {
   describe('addComment', () => {
     test('should add comment to issue', async () => {
       const comment = await api.addComment(
-        'leopagotto/ingvar-kit',
+        'leopagotto/ux-ingka-kit',
         42,
         'Great work!'
       );
@@ -317,7 +317,7 @@ describe('GitHubAPI', () => {
 
     test('should set created_at timestamp', async () => {
       const comment = await api.addComment(
-        'leopagotto/ingvar-kit',
+        'leopagotto/ux-ingka-kit',
         42,
         'Test'
       );
@@ -362,11 +362,11 @@ describe('GitHubAPI', () => {
 
   describe('getIssue', () => {
     test('should get issue details', async () => {
-      const issue = await api.getIssue('leopagotto/ingvar-kit', 42);
+      const issue = await api.getIssue('leopagotto/ux-ingka-kit', 42);
 
       expect(issue).toBeDefined();
       expect(issue.number).toBe(42);
-      expect(issue.repository).toBe('leopagotto/ingvar-kit');
+      expect(issue.repository).toBe('leopagotto/ux-ingka-kit');
     });
 
     test('should throw error for missing parameters', async () => {
@@ -407,7 +407,7 @@ describe('GitHubAPI', () => {
 
   describe('getProjectIssues', () => {
     test('should get project issues', async () => {
-      const issues = await api.getProjectIssues('leopagotto/ingvar-kit');
+      const issues = await api.getProjectIssues('leopagotto/ux-ingka-kit');
 
       expect(Array.isArray(issues)).toBe(true);
     });

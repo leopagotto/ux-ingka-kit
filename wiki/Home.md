@@ -1,10 +1,10 @@
-# Welcome to the Ingvar Kit Wiki! 🐺
+# Welcome to the UX Ingka Kit Wiki! 🐺
 
 > **Your comprehensive guide to mastering AI-powered workflow automation with real-time model selection**
 
-## 🌟 What is Ingvar Kit?
+## 🌟 What is UX Ingka Kit?
 
-Ingvar Kit is a powerful CLI tool that revolutionizes software development project management through:
+UX Ingka Kit is a powerful CLI tool that revolutionizes software development project management through:
 
 - **🎛️ Multi-Agent Orchestration**: Intelligent routing to specialized AI agents (v4.1.1) 🎉 LATEST
 - **🔄 Real-Time Model Selection**: Live AI model display in VS Code status bar (v4.1.1) ✨ NEW
@@ -114,7 +114,7 @@ Ingvar Kit is a powerful CLI tool that revolutionizes software development proje
 
 ```bash
 # One command - complete setup!
-INGVAR_AUTO_INIT=true npm install ingvar-kit
+INGVAR_AUTO_INIT=true npm install ux-ingka-kit
 
 # That's it! Your project now has:
 # ✅ Documentation structure (docs/specs/)
@@ -149,9 +149,9 @@ ingvar config set auto-resolve true
 
 ```bash
 # Traditional manual setup
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 cd your-project
-ingvar init
+ux-ingka init
 
 # Describe a simple bug fix to Copilot:
 # "Fix the login button not working on mobile"
@@ -225,7 +225,7 @@ ingvar init
 
 ### v2.5.0 (Q4 2025) - Planned
 
-- [ ] Auto-create projects during `ingvar init`
+- [ ] Auto-create projects during `ux-ingka init`
 - [ ] Multiple project support
 - [ ] Custom status field names
 - [ ] Milestone integration
@@ -272,7 +272,7 @@ Issues are automatically added to GitHub Projects and kept in sync throughout th
 
 ## 🤝 Community
 
-- **Issues:** [Report bugs or request features](https://github.com/leopagotto/ingvar-kit/issues)
+- **Issues:** [Report bugs or request features](https://github.com/leopagotto/ux-ingka-kit/issues)
 - **Discussions:** Share ideas and ask questions
 - **Contributing:** [Read our contribution guidelines](./Development-Guide)
 - **License:** MIT (free and open source)
@@ -281,8 +281,8 @@ Issues are automatically added to GitHub Projects and kept in sync throughout th
 
 ## 📖 Documentation
 
-- **README:** [Main documentation](https://github.com/leopagotto/ingvar-kit)
-- **Guides:** [In-depth tutorials](https://github.com/leopagotto/ingvar-kit/tree/main/docs/guides)
+- **README:** [Main documentation](https://github.com/leopagotto/ux-ingka-kit)
+- **Guides:** [In-depth tutorials](https://github.com/leopagotto/ux-ingka-kit/tree/main/docs/guides)
 - **API Reference:** [Command-line reference](./Commands-Reference)
 - **Examples:** Real-world usage patterns
 
@@ -305,8 +305,8 @@ Issues are automatically added to GitHub Projects and kept in sync throughout th
 
 <div align="center">
 
-**[⬆ Back to Top](#welcome-to-the-ingvar-kit-wiki-)**
+**[⬆ Back to Top](#welcome-to-the-ux-ingka-kit-wiki-)**
 
-Made with ❤️ by the Ingvar Kit team
+Made with ❤️ by the UX Ingka Kit team
 
 </div>

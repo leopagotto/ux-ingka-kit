@@ -16,8 +16,8 @@ if (isFirstRun()) {
 }
 
 program
-  .name('ingvar')
-  .description('Ingvar Kit - CLI tool for setting up GitHub Projects workflow with spec-driven development following spec-driven development workflow')
+  .name('ux-ingka')
+  .description('UX Ingka Kit - CLI tool for setting up GitHub Projects workflow with spec-driven development following spec-driven development workflow')
   .version(packageJson.version);
 
 // Get responsive banner
@@ -29,7 +29,7 @@ const banner = getBanner();
 // Init command - Set up complete workflow in current project
 program
   .command('init')
-  .description('Initialize Ingvar workflow in current project')
+  .description('Initialize UX Ingka workflow in current project')
   .option('-o, --org <organization>', 'GitHub organization name (optional for personal repos)')
   .option('-p, --project <number>', 'GitHub project number (optional)')
   .option('--skip-project', 'Skip GitHub Project setup entirely')
@@ -166,7 +166,7 @@ program
 // Plugin command - Manage plugins
 program
   .command('plugin')
-  .description('Manage Ingvar plugins')
+  .description('Manage UX Ingka plugins')
   .argument('[action]', 'Action: list, generate')
   .argument('[...args]', 'Additional arguments')
   .action((action, args) => {
@@ -207,10 +207,10 @@ program
     componentsCommand(options);
   });
 
-// CWDS command - DEPRECATED in favor of unified 'ingvar components' (v6.1.0+)
+// CWDS command - DEPRECATED in favor of unified 'ux-ingka components' (v6.1.0+)
 program
   .command('cwds')
-  .description('[DEPRECATED] Use "ingvar components" instead')
+  .description('[DEPRECATED] Use "ux-ingka components" instead')
   .argument('[action]', 'Action: install, list')
   .option('--auto', 'Auto-install recommended components (non-interactive)')
   .action((action, options) => {
@@ -266,16 +266,16 @@ program
   .action((action, options) => {
     const screenshotCommand = require('../lib/commands/screenshot-to-json');
     if (action === 'list' || action === 'test') {
-      screenshotCommand.parse(['node', 'ingvar', action, ...process.argv.slice(4)]);
+      screenshotCommand.parse(['node', 'ux-ingka', action, ...process.argv.slice(4)]);
     } else {
-      screenshotCommand.parse(['node', 'ingvar', 'screenshot-to-json', ...process.argv.slice(3)]);
+      screenshotCommand.parse(['node', 'ux-ingka', 'screenshot-to-json', ...process.argv.slice(3)]);
     }
   });
 
 // Health command - Check system health
 program
   .command('health')
-  .description('Check Ingvar Kit system health')
+  .description('Check UX Ingka Kit system health')
   .action(() => {
     const healthCommand = require('../lib/commands/health');
     healthCommand();

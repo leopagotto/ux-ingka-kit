@@ -4,7 +4,7 @@
 
 ## 🎯 Overview
 
-Ingvar Kit's intelligent AI analyzes the complexity of your work and automatically chooses the right development approach:
+UX Ingka Kit's intelligent AI analyzes the complexity of your work and automatically chooses the right development approach:
 
 - **Simple work** → Direct issue creation (fast turnaround)
 - **Complex work** → Create specification → Review → Break into focused issues
@@ -443,6 +443,6 @@ How to measure if the decision logic is working:
 
 **[⬆ Back to Top](#-intelligent-spec-first-decision-making)**
 
-Questions? [Open a Discussion](https://github.com/leopagotto/ingvar-kit/discussions)
+Questions? [Open a Discussion](https://github.com/leopagotto/ux-ingka-kit/discussions)
 
 </div>

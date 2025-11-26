@@ -1,17 +1,17 @@
 <div align="center">
 
-![Ingvar Kit](docs/assets/ingvar_kit_logo.png)
+![UX Ingka Kit](docs/assets/ingvar_kit_logo.png)
 
-<h1>Ingvar Kit</h1>
+<h1>UX Ingka Kit</h1>
 
 <h3>AI-Powered Workflow Automation with IKEA Ingka Design System</h3>
 
 **Transform your development with multi-agent AI, rapid app generation, spec-first development, and the official IKEA design system—all from your terminal.**
 
-[![npm version](https://img.shields.io/npm/v/ingvar-kit.svg?style=flat-square&color=0051BA&logo=npm)](https://www.npmjs.com/package/ingvar-kit)
+[![npm version](https://img.shields.io/npm/v/ux-ingka-kit.svg?style=flat-square&color=0051BA&logo=npm)](https://www.npmjs.com/package/ux-ingka-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-FFDA1A.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green?style=flat-square&logo=node.js)](https://nodejs.org)
-[![IKEA Design](https://img.shields.io/badge/IKEA-Ingka_Skapa-0051BA?style=flat-square&logo=ikea)](https://github.com/leopagotto/ingvar-kit)
+[![IKEA Design](https://img.shields.io/badge/IKEA-Ingka_Skapa-0051BA?style=flat-square&logo=ikea)](https://github.com/leopagotto/ux-ingka-kit)
 
 [Quick Start](#-quick-start) • [Features](#-features) • [IKEA Design System](#-ikea-ingka-design-system) • [Spark Generator](docs/SPARK.md) • [Documentation](docs/README.md)
 
@@ -44,20 +44,20 @@
 
 | System | Components | Bundled in npm? | Installation | Use Case |
 |--------|-----------|-----------------|--------------|----------|
-| **Skapa** | 64 components | ✅ **YES** | `import { Button } from 'ingvar-kit/skapa'` | Customer-facing apps |
+| **Skapa** | 64 components | ✅ **YES** | `import { Button } from 'ux-ingka-kit/skapa'` | Customer-facing apps |
 | **CWDS** | 6 templates | ❌ **NO** (templates only) | Copy from `templates/cwds-components/` | Internal co-worker tools |
 | **Icons** | 800+ icons | ✅ **YES** | `import { Icon } from '@ingka/ssr-icon'` | Both Skapa & CWDS |
 
 ### Skapa Components (✅ Bundled - Ready to Use)
 
-Ingvar Kit bundles **64 official @ingka/* components** directly. No additional installation required:
+UX Ingka Kit bundles **64 official @ingka/* components** directly. No additional installation required:
 
 \`\`\`typescript
-// Direct import - works immediately after installing ingvar-kit
-import { Button, Card, InputField } from 'ingvar-kit/skapa/ingka-direct';
+// Direct import - works immediately after installing ux-ingka-kit
+import { Button, Card, InputField } from 'ux-ingka-kit/skapa/ingka-direct';
 
 // Or use simplified wrappers
-import { Button, TextField } from 'ingvar-kit/skapa';
+import { Button, TextField } from 'ux-ingka-kit/skapa';
 \`\`\`
 
 **All 64 components include:** Accordion, Avatar, Badge, Banner, Breadcrumb, Button, Card, Carousel, Checkbox, Choice, Combobox, and 53 more...
@@ -68,7 +68,7 @@ CWDS components are **NOT bundled** as npm packages. They are **TypeScript templ
 
 \`\`\`bash
 # Step 1: Copy templates to your project
-cp -r node_modules/ingvar-kit/templates/cwds-components/* src/components/cwds/
+cp -r node_modules/ux-ingka-kit/templates/cwds-components/* src/components/cwds/
 
 # Step 2: Import the CSS tokens
 import './components/cwds/styles/cwds-tokens.css';
@@ -91,7 +91,7 @@ import { GlobalHeader, NavigationMenu } from './components/cwds';
 
 ### Icons (@ingka/ssr-icon)
 
-Icons are bundled with ingvar-kit as `@ingka/ssr-icon`:
+Icons are bundled with ux-ingka-kit as `@ingka/ssr-icon`:
 
 \`\`\`typescript
 import { Icon } from '@ingka/ssr-icon';
@@ -111,7 +111,7 @@ import { Icon } from '@ingka/ssr-icon';
 
 ## What is INGVAR-KIT?
 
-**Ingvar Kit** is an AI-powered CLI that combines multi-agent orchestration, rapid app generation with IKEA design system, spec-driven development, and GitHub Projects automation—all in one powerful tool.
+**UX Ingka Kit** is an AI-powered CLI that combines multi-agent orchestration, rapid app generation with IKEA design system, spec-driven development, and GitHub Projects automation—all in one powerful tool.
 Named after IKEA founder **Ingvar Kamprad**, this toolkit brings professional design excellence and AI automation together to transform your development workflow.
 
 
@@ -124,7 +124,7 @@ Named after IKEA founder **Ingvar Kamprad**, this toolkit brings professional de
    - **66+ Official @ingka/\* Components** - Production-ready, pre-compiled React components from IKEA's private npm registry. Use these for standard IKEA-compliant applications.
    - **34 Local TypeScript Templates** - Full source code templates in `templates/ingka-components/` for learning and customization. Copy and modify when you need control.
    - **800+ Official SVG Icons** - Complete IKEA icon library
-   - **Automatic Installation** - Both official packages and templates included with `ingvar-kit`
+   - **Automatic Installation** - Both official packages and templates included with `ux-ingka-kit`
    - **Comprehensive Design Guidelines** - Learn when to use official vs templates: `docs/guides/DESIGN_GUIDELINES.md`
 
    **Understanding the Dual System:**
@@ -176,7 +176,7 @@ Named after IKEA founder **Ingvar Kamprad**, this toolkit brings professional de
    - Adapts to: Cline, Copilot, Cursor, Codeium
    - Auto-updates based on project structure and enabled features
 
-8. **📦 @ingvar-kit/skapa-components Package** 🆕
+8. **📦 @ux-ingka-kit/skapa-components Package** 🆕
    - 64 official Skapa components with direct @ingka exports
    - Dual import strategy: direct @ingka vs simplified wrappers
    - 328KB optimized bundle with tree-shaking
@@ -246,7 +246,7 @@ sequenceDiagram
     participant GH as GitHub
     participant AI as AI Agent
 
-    Dev->>CLI: ingvar spec new "Feature"
+    Dev->>CLI: ux-ingka spec new "Feature"
     CLI->>GH: Create Issue #42
     GH-->>Dev: Spec Ready for Review
 
@@ -254,7 +254,7 @@ sequenceDiagram
     Dev->>AI: Implement with AI
     AI->>Dev: Generated Code
 
-    Dev->>CLI: ingvar spec-diff #42
+    Dev->>CLI: ux-ingka spec-diff #42
     CLI->>GH: Fetch Original Spec
     CLI-->>Dev: Show Semantic Changes
 
@@ -267,7 +267,7 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    A[npm install<br/>ingvar-kit] --> B{Postinstall<br/>Prompt}
+    A[npm install<br/>ux-ingka-kit] --> B{Postinstall<br/>Prompt}
     B -->|Yes| C{Choose Mode}
     B -->|No| Z[Skip Installation]
 
@@ -294,16 +294,16 @@ graph TD
 
 Many developers ask: _"How is Ingvar different from GitHub Spec Kit?"_ Here's the breakdown:
 
-| Feature             | GitHub Spec Kit             | Ingvar Kit                            | Winner                     |
+| Feature             | GitHub Spec Kit             | UX Ingka Kit                            | Winner                     |
 | ------------------- | --------------------------- | ------------------------------------- | -------------------------- |
 | **Philosophy**      | Specs as Code               | Specs as Issues                       | _Different approaches_     |
 | **Storage**         | Files (`specs/001/spec.md`) | GitHub Issues (#42, #80)              | **Ingvar** (simpler)       |
-| **Create Spec**     | Create file → Commit → Push | `ingvar spec new "Feature"`           | **Ingvar** (5x faster)     |
+| **Create Spec**     | Create file → Commit → Push | `ux-ingka spec new "Feature"`           | **Ingvar** (5x faster)     |
 | **View Spec**       | Clone repo → Read file      | Click issue link                      | **Ingvar** (instant)       |
 | **Edit Spec**       | Edit file → Commit → Push   | Edit issue on GitHub                  | **Ingvar** (no git needed) |
 | **Team Collab**     | Pull requests → Merge       | Real-time comments                    | **Ingvar** (no conflicts)  |
 | **Non-Dev Access**  | Requires Git knowledge      | Just GitHub account                   | **Ingvar** (accessible)    |
-| **Diff Tracking**   | `git diff spec.md`          | `ingvar spec-diff <issue>`            | **Ingvar** (semantic)      |
+| **Diff Tracking**   | `git diff spec.md`          | `ux-ingka spec-diff <issue>`            | **Ingvar** (semantic)      |
 | **Project Board**   | Manual linking              | Native integration                    | **Ingvar** (automatic)     |
 | **Offline Work**    | ✅ Yes (files local)        | ❌ No (requires internet)             | **Spec Kit**               |
 | **Backup**          | ✅ Git history              | ⚠️ GitHub only                        | **Spec Kit**               |
@@ -364,17 +364,17 @@ Generate complete React apps from a single prompt using Ingvar Spark with IKEA d
 
 ```bash
 # Generate with Ingka Skapa (customer-facing)
-ingvar spark "Create a todo app" --design-system ingka
+ux-ingka spark "Create a todo app" --design-system ingka
 
 # Generate with CWDS (internal co-worker tools)
-ingvar spark "Build admin dashboard" --design-system cwds
+ux-ingka spark "Build admin dashboard" --design-system cwds
 
 # Interactive mode prompts for design system choice
-ingvar spark "Create a shopping cart"
+ux-ingka spark "Create a shopping cart"
 
 # Advanced examples
-ingvar spark "Build analytics dashboard with charts" --design-system ingka
-ingvar spark "Create product catalog with search" --design-system ingka
+ux-ingka spark "Build analytics dashboard with charts" --design-system ingka
+ux-ingka spark "Create product catalog with search" --design-system ingka
 ```
 
 **What you get:**
@@ -393,7 +393,7 @@ ingvar spark "Create product catalog with search" --design-system ingka
 Built-in support for the official IKEA design systems with **automatic installation** during setup.
 
 **⚠️ IKEA-Only Policy:**
-Ingvar Kit uses **only official IKEA design systems**:
+UX Ingka Kit uses **only official IKEA design systems**:
 
 - ✅ **Ingka Skapa** (72 components) for customer-facing apps
 - ✅ **CWDS** (10+ components) for internal co-worker tools
@@ -403,29 +403,29 @@ Ingvar Kit uses **only official IKEA design systems**:
 
 ```bash
 # Automatic installation during npm install
-npm install ingvar-kit
+npm install ux-ingka-kit
 # → Prompted to install 75 IKEA components
 
 # Or install components anytime
-ingvar components
+ux-ingka components
 
 # Or install CWDS for internal tools
-ingvar cwds install
+ux-ingka cwds install
 
 # 🚀 Spark with design system choice!
-ingvar spark "todo app"
+ux-ingka spark "todo app"
 # → Choose: Ingka Skapa (customer-facing) or CWDS (internal tools)
 # → Generates React app with @ingka/* or @ingka-group-digital/* components
 ```
 
 **🚀 New: Automatic Component Installation**
 
-When you install Ingvar Kit, you'll be prompted to install IKEA components:
+When you install UX Ingka Kit, you'll be prompted to install IKEA components:
 
 ```
 📦 IKEA Component Library Available
 
-  Ingvar Kit includes 75 production-ready IKEA components
+  UX Ingka Kit includes 75 production-ready IKEA components
   from the official Ingka Skapa Design System:
 
   • Buttons, Cards, Forms, Modals, Tables, and more
@@ -508,19 +508,19 @@ function ProductCard({ product }) {
 
 ---
 
-### 📦 @ingvar-kit/skapa-components Package (NEW!)
+### 📦 @ux-ingka-kit/skapa-components Package (NEW!)
 
 **Production-ready npm package** with 64+ official IKEA Skapa components:
 
 ```bash
 # Install the package
-npm install @ingvar-kit/skapa-components
+npm install @ux-ingka-kit/skapa-components
 
 # Import with official Skapa names (TypeScript support)
-import { Button, Card, InputField, Switch } from '@ingvar-kit/skapa-components/ingka-direct';
+import { Button, Card, InputField, Switch } from '@ux-ingka-kit/skapa-components/ingka-direct';
 
 # Or use simplified wrappers for rapid prototyping
-import { Button, TextField, Toggle } from '@ingvar-kit/skapa-components';
+import { Button, TextField, Toggle } from '@ux-ingka-kit/skapa-components';
 ```
 
 **✨ Key Features:**
@@ -569,13 +569,13 @@ For internal IKEA co-worker applications (admin tools, dashboards, internal plat
 
 ```bash
 # Install CWDS components interactively
-ingvar cwds install
+ux-ingka cwds install
 
 # Auto-install recommended components
-ingvar cwds install --auto
+ux-ingka cwds install --auto
 
 # List available CWDS components
-ingvar cwds list
+ux-ingka cwds list
 ```
 
 **What is CWDS?**
@@ -636,7 +636,7 @@ GitHub-native specification workflow with evolution tracking:
 
 ```bash
 # Create specification (GitHub issue, not files!)
-ingvar spec new "Build authentication system"
+ux-ingka spec new "Build authentication system"
 
 # Clarify requirements
 ingvar clarify 42
@@ -662,16 +662,16 @@ ingvar tasks status 42  # Shows: 5/10 completed (50%)
 
 ```bash
 # Track how spec evolved
-ingvar spec-diff 42 --timeline
+ux-ingka spec-diff 42 --timeline
 
 # See aggregate changes
-ingvar spec-diff 42 --summary
+ux-ingka spec-diff 42 --summary
 
 # Extend spec with new requirements
-ingvar spec-extend 42 "Add OAuth2 support"
+ux-ingka spec-extend 42 "Add OAuth2 support"
 
 # Extend and create child issues
-ingvar spec-extend 42 "Add SSO" --create-issues
+ux-ingka spec-extend 42 "Add SSO" --create-issues
 ```
 
 **Why GitHub Issues over Files?**
@@ -739,7 +739,7 @@ Ingvar transforms your GitHub workflow with intelligent automation. Here's the s
 # Three easy ways:
 ingvar issue                         # Interactive prompts
 "Hey Copilot, add dark mode"         # Just talk (Copilot auto-creates issue)
-ingvar spec new "Build payment system" # For complex features
+ux-ingka spec new "Build payment system" # For complex features
 ```
 
 ### 2. **Orchestrator Routes to Specialist**
@@ -776,7 +776,7 @@ When you're building something big (> 1 week), Ingvar helps you plan first:
 
 ```bash
 # 1. Create specification (GitHub issue, not files!)
-ingvar spec new "Build authentication system"
+ux-ingka spec new "Build authentication system"
 → Creates structured spec template
 
 # 2. Clarify requirements (AI asks questions)
@@ -796,7 +796,7 @@ ingvar tasks status 42
 → Shows: "5/10 completed (50%)"
 
 # 6. Extend spec later (optional)
-ingvar spec-extend 42 "Add OAuth2 support"
+ux-ingka spec-extend 42 "Add OAuth2 support"
 → Merges new requirements without losing old ones
 ```
 
@@ -824,7 +824,7 @@ You → Orchestrator → Specialist Agent → GitHub Issue → Work → Done
 
 Ingvar has 3 layers:
 
-1. **CLI Commands** - What you type (`ingvar init`, `ingvar issue`, `ingvar spec new`)
+1. **CLI Commands** - What you type (`ux-ingka init`, `ingvar issue`, `ux-ingka spec new`)
 2. **Orchestrator** - Smart router that picks the right agent
 3. **Specialist Agents** - Experts (Frontend, Backend, DevOps, Testing, Docs)
 
@@ -865,10 +865,10 @@ Import 64+ official IKEA Skapa components with TypeScript support:
 
 ```bash
 # Option 1: Install via CLI (interactive - choose package or individual components)
-ingvar components
+ux-ingka components
 
 # Option 2: Install package directly
-npm install @ingvar-kit/skapa-components
+npm install @ux-ingka-kit/skapa-components
 ```
 
 **Option A: Direct @ingka Exports (Recommended for Skapa Projects)**
@@ -881,7 +881,7 @@ import {
   Card,
   InputField,
   Switch,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function App() {
   return (
@@ -899,7 +899,7 @@ function App() {
 Friendly component names for quick prototyping:
 
 ```tsx
-import { Button, TextField, Toggle } from "@ingvar-kit/skapa-components";
+import { Button, TextField, Toggle } from "@ux-ingka-kit/skapa-components";
 
 function App() {
   return (
@@ -914,7 +914,7 @@ function App() {
 
 **📦 Package Stats:** 64 components • 328KB bundle • 97% TypeScript coverage • Tree-shakeable
 **📚 Documentation:** [Complete Guide →](packages/skapa-components/README.md) | [Component List →](packages/skapa-components/COMPONENT_STATUS.md)
-**🔧 Alternative:** Cherry-pick individual components with `ingvar components` (72 available)
+**🔧 Alternative:** Cherry-pick individual components with `ux-ingka components` (72 available)
 
 ---
 
@@ -926,11 +926,11 @@ Generate complete React apps from a single prompt:
 
 # Install globally
 
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 
 # Create an app instantly
 
-ingvar spark --prompt "Create a todo app with dark mode and drag-drop"
+ux-ingka spark --prompt "Create a todo app with dark mode and drag-drop"
 
 # Generated app includes:
 
@@ -953,7 +953,7 @@ Set up Ingvar for project management and AI assistance:
 ### Installation
 
 \`\`\`bash
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 \`\`\`
 
 ### Initialize Your Project
@@ -966,7 +966,7 @@ cd your-project
 
 # Initialize Ingvar
 
-ingvar init
+ux-ingka init
 
 # Follow interactive setup
 
@@ -1014,7 +1014,7 @@ ingvar --help
 
 **Create Specifications:**
 \`\`\`bash
-ingvar spec new "Build user dashboard"
+ux-ingka spec new "Build user dashboard"
 
 # Creates GitHub issue with structured spec template
 
@@ -1066,23 +1066,23 @@ ingvar tasks status 42
 
 # Standard diff view
 
-ingvar spec-diff 42
+ux-ingka spec-diff 42
 
 # Chronological timeline
 
-ingvar spec-diff 42 --timeline
+ux-ingka spec-diff 42 --timeline
 
 # Aggregate statistics
 
-ingvar spec-diff 42 --summary
+ux-ingka spec-diff 42 --summary
 
 # Version range comparison
 
-ingvar spec-diff 42 --from 2 --to 5
+ux-ingka spec-diff 42 --from 2 --to 5
 
 # Section-specific diff
 
-ingvar spec-diff 42 --section requirements
+ux-ingka spec-diff 42 --section requirements
 \`\`\`
 
 **Extend Specifications:**
@@ -1090,15 +1090,15 @@ ingvar spec-diff 42 --section requirements
 
 # Basic extension (merge new requirements)
 
-ingvar spec-extend 42 "Add Slack notifications"
+ux-ingka spec-extend 42 "Add Slack notifications"
 
 # With child issues for the new work
 
-ingvar spec-extend 42 "Add OAuth2" --create-issues
+ux-ingka spec-extend 42 "Add OAuth2" --create-issues
 
 # Preview without updating
 
-ingvar spec-extend 42 "Add mobile app" --no-update
+ux-ingka spec-extend 42 "Add mobile app" --no-update
 \`\`\`
 
 ---
@@ -1163,7 +1163,7 @@ ingvar spec-extend 42 "Add mobile app" --no-update
 
 # 1. Create specification issue (GitHub-native, no files!)
 
-ingvar spec new "Build user authentication system"
+ux-ingka spec new "Build user authentication system"
 → Creates GitHub issue with structured template
 
 # 2. Clarify requirements (AI asks questions)
@@ -1183,12 +1183,12 @@ ingvar tasks create 42 --create-issues
 
 # 5. Track evolution as spec changes
 
-ingvar spec-diff 42 --timeline
+ux-ingka spec-diff 42 --timeline
 → Shows all versions with timestamps
 
 # 6. Extend with new requirements
 
-ingvar spec-extend 42 "Add OAuth2 support"
+ux-ingka spec-extend 42 "Add OAuth2 support"
 → Merges new requirements (preserves existing)
 
 # Complete workflow: spec → clarify → plan → tasks → track → extend
@@ -1343,15 +1343,15 @@ git push origin feature/amazing-feature
 **WHAT'S NEW:**
 
 - Consistent **INGVAR** branding throughout (goodbye "LEO"!)
-- Unified component installer: Use `ingvar components` for all IKEA components
-- Optional component install prompt right after `ingvar init`
+- Unified component installer: Use `ux-ingka components` for all IKEA components
+- Optional component install prompt right after `ux-ingka init`
 - Fixed CWDS command crash (now shows helpful deprecation notice)
 
 ```bash
-# After ingvar init, install components immediately:
-ingvar init                                    # Setup + optional component install
-ingvar components --mode essential             # Or install later (23 components)
-ingvar components --mode all                   # All 72 components
+# After ux-ingka init, install components immediately:
+ux-ingka init                                    # Setup + optional component install
+ux-ingka components --mode essential             # Or install later (23 components)
+ux-ingka components --mode all                   # All 72 components
 ```
 
 ---
@@ -1364,7 +1364,7 @@ ingvar components --mode all                   # All 72 components
 
 ```bash
 # Enhanced Spark command:
-ingvar spark "Build a todo app" --name my-app   # Works immediately!
+ux-ingka spark "Build a todo app" --name my-app   # Works immediately!
 
 # Component count corrected:
 72 Official IKEA Components (verified and documented)
@@ -1403,7 +1403,7 @@ lib/ai-instructions/frontend-agent.md # Priority rules
 
 ```bash
 # ✅ Now consistent everywhere:
-ingvar init              # Initialize workflow
+ux-ingka init              # Initialize workflow
 ingvar agent list        # List AI agents
 ingvar ai sync           # Regenerate AI instructions
 ingvar issue             # Create GitHub issue
@@ -1420,25 +1420,25 @@ ingvar github setup      # Configure repository
 
 🎁 **One Package** • 📦 **64 Components Included** • 🚀 **Simpler Installation** • ✅ **React Peer Dependencies** • 🔄 **New Import Paths**
 
-**BREAKING CHANGE:** Skapa components are now bundled directly with `ingvar-kit`! No separate package installation needed.
+**BREAKING CHANGE:** Skapa components are now bundled directly with `ux-ingka-kit`! No separate package installation needed.
 
 ```bash
 # Old (v6.6.x):
-npm install ingvar-kit
+npm install ux-ingka-kit
 npm install ingvar-skapa-components
 
 # New (v6.7.1+):
-npm install ingvar-kit react react-dom
+npm install ux-ingka-kit react react-dom
 ```
 
 **New Import Paths:**
 
 ```javascript
 // Simplified wrappers
-import { Button, TextField } from "ingvar-kit/skapa";
+import { Button, TextField } from "ux-ingka-kit/skapa";
 
 // Direct @ingka exports (Recommended)
-import { Button, Card } from "ingvar-kit/skapa/ingka-direct";
+import { Button, Card } from "ux-ingka-kit/skapa/ingka-direct";
 ```
 
 **Benefits:** ✅ One package instead of two • ✅ All 64 components included • ✅ Same tree-shakeable ES modules • ✅ 97% TypeScript coverage maintained
@@ -1507,7 +1507,7 @@ Major architecture refactor with 90.7% smaller AI instructions, complete 7-agent
 - 🎯 Slack integration
 - 🎯 Additional design system support (Material, Ant Design)
 
-**Roadmap**: Check our [open issues](https://github.com/leopagotto/ingvar-kit/issues) for upcoming features
+**Roadmap**: Check our [open issues](https://github.com/leopagotto/ux-ingka-kit/issues) for upcoming features
 
 ---
 
@@ -1529,14 +1529,14 @@ Built with:
 - [Chalk](https://github.com/chalk/chalk) - Terminal styling
 - [Jest](https://jestjs.io/) - Testing framework
 
-Special thanks to all [contributors](https://github.com/leopagotto/ingvar-kit/graphs/contributors)!
+Special thanks to all [contributors](https://github.com/leopagotto/ux-ingka-kit/graphs/contributors)!
 
 ---
 
 ## 📞 Support
 
-- 💬 [GitHub Discussions](https://github.com/leopagotto/ingvar-kit/discussions) - Community Q&A
-- 🐛 [Issue Tracker](https://github.com/leopagotto/ingvar-kit/issues) - Bug reports and feature requests
+- 💬 [GitHub Discussions](https://github.com/leopagotto/ux-ingka-kit/discussions) - Community Q&A
+- 🐛 [Issue Tracker](https://github.com/leopagotto/ux-ingka-kit/issues) - Bug reports and feature requests
 - 📖 [Documentation](docs/) - Full documentation in docs/ folder
 - 📧 Contact: [GitHub](https://github.com/leonpagotto)
 
@@ -1546,6 +1546,6 @@ Special thanks to all [contributors](https://github.com/leopagotto/ingvar-kit/gr
 
 **Made with ❤️ for developers who value automation and best practices**
 
-**[⭐ Star this repo](https://github.com/leopagotto/ingvar-kit)** if Ingvar helps your workflow!
+**[⭐ Star this repo](https://github.com/leopagotto/ux-ingka-kit)** if Ingvar helps your workflow!
 
 </div>

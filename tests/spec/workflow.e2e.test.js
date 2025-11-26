@@ -349,7 +349,7 @@ describe('E2E: Specification-Driven Development Workflow', () => {
   });
 });
 
-describe('Integration: Spec System with Ingvar Kit', () => {
+describe('Integration: Spec System with UX Ingka Kit', () => {
   test('should integrate with existing commands', () => {
     // Verify SpecCommands are properly exported
     expect(typeof SpecCommands).toBe('function');

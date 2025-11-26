@@ -1,11 +1,47 @@
 # Changelog
 
-All notable changes to Ingvar Kit will be documented in this file.
+All notable changes to UX Ingka Kit (formerly Ingvar Kit) will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 # Changelog
+
+## [7.0.0] - 2025-11-26
+
+### 🎉 MAJOR: Rebranding to UX Ingka Kit
+
+**The package has been renamed from `ingvar-kit` to `ux-ingka-kit`!**
+
+#### What Changed:
+- **Package name:** `ingvar-kit` → `ux-ingka-kit`
+- **CLI command:** `ingvar` → `ux-ingka`
+- **ASCII banner:** Updated with "UX INGKA KIT" branding
+
+#### Migration:
+```bash
+# Uninstall old package
+npm uninstall ingvar-kit
+
+# Install new package
+npm install ux-ingka-kit
+
+# Use new CLI command
+ux-ingka init
+ux-ingka spark "Build my app"
+ux-ingka components
+```
+
+#### All commands updated:
+- `ux-ingka init` - Initialize workflow
+- `ux-ingka spark` - Generate React apps
+- `ux-ingka components` - Install IKEA components
+- `ux-ingka spec` - Manage specifications
+- `ux-ingka agent` - Manage AI agents
+- `ux-ingka model` - AI model selection
+- `ux-ingka health` - System health check
+
+---
 
 ## [6.8.6] - 2025-11-26
 

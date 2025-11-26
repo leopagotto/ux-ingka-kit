@@ -4,7 +4,7 @@
  * CWDS Integration Tests
  *
  * Tests the Co-Worker Design Subsystem (CWDS) installation
- * and integration with Ingvar Kit Spark apps.
+ * and integration with UX Ingka Kit Spark apps.
  *
  * @see lib/components/cwds-installer.js
  * @see lib/commands/spark.js

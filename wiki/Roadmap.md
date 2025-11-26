@@ -1,4 +1,4 @@
-# 🗺️ Ingvar Kit Roadmap
+# 🗺️ UX Ingka Kit Roadmap
 
 > **Our vision for the future of AI-powered workflow automation**
 
@@ -188,7 +188,7 @@ See issue #15 for details
 
 #### 1. Auto-Create Projects
 
-- Automatically create GitHub Project during `ingvar init` if none exists
+- Automatically create GitHub Project during `ux-ingka init` if none exists
 - Pre-configure with standard fields (Status, Priority, Assignees, Labels)
 - Setup Board, Table, and Timeline views
 
@@ -336,7 +336,7 @@ See issue #15 for details
 - [ ] Desktop notifications
 - [ ] Mobile companion app
 
-**Want to vote or suggest features?** [Open an issue!](https://github.com/leopagotto/ingvar-kit/issues/new?template=feature-request.md)
+**Want to vote or suggest features?** [Open an issue!](https://github.com/leopagotto/ux-ingka-kit/issues/new?template=feature-request.md)
 
 ---
 
@@ -406,7 +406,7 @@ See issue #15 for details
 
 **2. Propose New Features**
 
-- Open a [feature request](https://github.com/leopagotto/ingvar-kit/issues/new?template=feature-request.md)
+- Open a [feature request](https://github.com/leopagotto/ux-ingka-kit/issues/new?template=feature-request.md)
 - Discuss in GitHub Discussions
 - Share your workflow challenges
 
@@ -456,7 +456,7 @@ See issue #15 for details
 
 <div align="center">
 
-**Have questions about the roadmap?** [Ask in Discussions](https://github.com/leopagotto/ingvar-kit/discussions)
+**Have questions about the roadmap?** [Ask in Discussions](https://github.com/leopagotto/ux-ingka-kit/discussions)
 
 **Want to contribute?** [See Development Guide](./Development-Guide)
 
