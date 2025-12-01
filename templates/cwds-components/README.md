@@ -202,8 +202,18 @@ If you need to add these templates to an existing project:
 # Copy templates to your project
 cp -r templates/cwds-components/* src/components/cwds/
 
-# Install required @ingka/* dependencies
-npm install @ingka/button @ingka/card @ingka/input @ingka/ssr-icon @ingka/avatar @ingka/modal
+# No external dependencies required!
+# Components use inline SVG icons and work out of the box.
+```
+
+### Optional: Official IKEA Icons (Artifactory Access)
+
+If you have access to the IKEA Artifactory npm registry, you can optionally use official icons:
+
+```bash
+# Configure .npmrc for IKEA Artifactory (requires corporate access)
+# Then install official icon package
+npm install @ingka/ssr-icon
 ```
 
 ## Design System Compliance
@@ -251,10 +261,11 @@ import "./components/cwds/styles/cwds-tokens.css";
 
 These templates provide a base implementation matching the CWDS specification. You can customize them for your specific needs:
 
-1. **Replace placeholder icons** with actual `@ingka/ssr-icon` components (note: icon paths changed in v11.1.0)
-2. **Add real `@ingka/*` components** instead of styled divs/buttons
-3. **Adjust colors and spacing** to match your brand requirements
-4. **Add additional props** for your use cases
+1. **Icons work out of the box** - Components use inline SVG icons
+2. **Optional: Replace with `@ingka/ssr-icon`** components if you have Artifactory access (note: icon paths changed in v11.1.0)
+3. **Add real `@ingka/*` components** instead of styled divs/buttons
+4. **Adjust colors and spacing** to match your brand requirements
+5. **Add additional props** for your use cases
 
 ## Real @ingka/\* Packages
 
