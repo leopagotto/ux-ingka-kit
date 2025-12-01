@@ -43,8 +43,8 @@ const isGitRepo = () => {
   }
 };
 
-// Check if LEO is already initialized
-const isLeoInitialized = () => {
+// Check if UX Ingka is already initialized
+const isUxIngkaInitialized = () => {
   return fs.existsSync('.github/ISSUE_TEMPLATE') ||
          fs.existsSync('docs/specs') ||
          fs.existsSync('.github/copilot-instructions.md');
@@ -52,27 +52,27 @@ const isLeoInitialized = () => {
 
 const version = getVersion();
 
-// Golden gradient ASCII art for LEO-KIT
-const leoLine1 = '  ' + chalk.hex('#FFD700')('██╗███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ ██████╗         ██╗  ██╗██╗████████╗') + '  ';
-const leoLine2 = '  ' + chalk.hex('#FFC700')('██║████╗  ██║██╔════╝ ██║   ██║██╔══██╗██╔══██╗        ██║ ██╔╝██║╚══██╔══╝') + '  ';
-const leoLine3 = '  ' + chalk.hex('#FFB700')('██║██╔██╗ ██║██║  ███╗██║   ██║███████║██████╔╝        █████╔╝ ██║   ██║   ') + '  ';
-const leoLine4 = '  ' + chalk.hex('#FFA500')('██║██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║██╔══██╗        ██╔═██╗ ██║   ██║   ') + '  ';
-const leoLine5 = '  ' + chalk.hex('#FF9500')('██║██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║██║  ██║███████╗██║  ██╗██║   ██║   ') + '  ';
-const leoLine6 = '  ' + chalk.hex('#FF8C00')('╚═╝╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝   ') + '  ';
+// Golden gradient ASCII art for UX INGKA KIT
+const uxIngkaLine1 = '  ' + chalk.hex('#FFD700')('██╗███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ ██████╗         ██╗  ██╗██╗████████╗') + '  ';
+const uxIngkaLine2 = '  ' + chalk.hex('#FFC700')('██║████╗  ██║██╔════╝ ██║   ██║██╔══██╗██╔══██╗        ██║ ██╔╝██║╚══██╔══╝') + '  ';
+const uxIngkaLine3 = '  ' + chalk.hex('#FFB700')('██║██╔██╗ ██║██║  ███╗██║   ██║███████║██████╔╝        █████╔╝ ██║   ██║   ') + '  ';
+const uxIngkaLine4 = '  ' + chalk.hex('#FFA500')('██║██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══██║██╔══██╗        ██╔═██╗ ██║   ██║   ') + '  ';
+const uxIngkaLine5 = '  ' + chalk.hex('#FF9500')('██║██║ ╚████║╚██████╔╝ ╚████╔╝ ██║  ██║██║  ██║███████╗██║  ██╗██║   ██║   ') + '  ';
+const uxIngkaLine6 = '  ' + chalk.hex('#FF8C00')('╚═╝╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝   ') + '  ';
 
 const simpleMessage = `
 ${chalk.hex('#FFD700')('╔═══════════════════════════════════════════════════════════════════════════════╗')}
 ${chalk.hex('#FFD700')('║')}${centerInBox('')}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}\$\{leoLine1}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}\$\{leoLine2}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}\$\{leoLine3}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}\$\{leoLine4}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}\$\{leoLine5}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}\$\{leoLine6}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}\$\{uxIngkaLine1}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}\$\{uxIngkaLine2}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}\$\{uxIngkaLine3}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}\$\{uxIngkaLine4}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}\$\{uxIngkaLine5}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}\$\{uxIngkaLine6}${chalk.hex('#FFD700')('║')}
 ${chalk.hex('#FFD700')('║')}${centerInBox('')}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}${centerInBox(chalk.hex('#FFD700')('�  GitHub Workflow Automation Toolkit  🇸🇪'))}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}${centerInBox(chalk.hex('#FFD700')('💪 AI-Powered Workflow Automation with IKEA Design System 🇸🇪'))}${chalk.hex('#FFD700')('║')}
 ${chalk.hex('#FFD700')('║')}${centerInBox(chalk.gray(`Version ${version}`))}${chalk.hex('#FFD700')('║')}
-${chalk.hex('#FFD700')('║')}${centerInBox('')}${chalk.hex('#FFD700')('║')}
+${chalk.hex('#FFD700')('║')}${centerInBox(chalk.gray('Made with ❤️ by F&CS XD Team'))}${chalk.hex('#FFD700')('║')}
 ${chalk.hex('#FFD700')('╚═══════════════════════════════════════════════════════════════════════════════╝')}
 
 ${chalk.green.bold('✨ Installation Complete! ✨')}
@@ -90,14 +90,14 @@ ${chalk.hex('#FFD700')('──────────────────�
 
 ${chalk.hex('#FFD700').bold('🚀 Quick Start:')}
 
-  ${chalk.white.bold('1.')} ${chalk.hex('#FF9500')('leo --version')}        ${chalk.gray('→ Verify installation')}
-  ${chalk.white.bold('2.')} ${chalk.hex('#FF9500')('leo welcome')}          ${chalk.gray('→ View complete guide')}
+  ${chalk.white.bold('1.')} ${chalk.hex('#FF9500')('ux-ingka --version')}        ${chalk.gray('→ Verify installation')}
+  ${chalk.white.bold('2.')} ${chalk.hex('#FF9500')('ux-ingka welcome')}          ${chalk.gray('→ View complete guide')}
   ${chalk.white.bold('3.')} ${chalk.hex('#FF9500')('cd your-project')}      ${chalk.gray('→ Navigate to project')}
-  ${chalk.white.bold('4.')} ${chalk.hex('#FF9500')('leo init')}            ${chalk.gray('→ Initialize workflow')}
+  ${chalk.white.bold('4.')} ${chalk.hex('#FF9500')('ux-ingka init')}            ${chalk.gray('→ Initialize workflow')}
 
 ${chalk.hex('#FFD700')('─────────────────────────────────────────────────────────────────────')}
 
-${chalk.gray('📚 Documentation:')} ${chalk.blue.underline('https://github.com/leonpagotto/leo-kit')}
+${chalk.gray('📚 Documentation:')} ${chalk.blue.underline('https://github.com/leopagotto/ux-ingka-kit')}
 `;
 
 // Wrap in async IIFE to handle top-level await
@@ -108,11 +108,11 @@ ${chalk.gray('📚 Documentation:')} ${chalk.blue.underline('https://github.com/
 
     const isGlobal = isGlobalInstall();
     const inGitRepo = isGitRepo();
-    const alreadyInitialized = isLeoInitialized();
+    const alreadyInitialized = isUxIngkaInitialized();
 
   // Create a marker file to indicate successful installation
   const homeDir = require('os').homedir();
-  const configDir = path.join(homeDir, '.leo-workflow');
+  const configDir = path.join(homeDir, '.ux-ingka-workflow');
 
   if (!fs.existsSync(configDir)) {
     fs.mkdirSync(configDir, { recursive: true });
@@ -126,13 +126,13 @@ ${chalk.gray('📚 Documentation:')} ${chalk.blue.underline('https://github.com/
   }, null, 2));
 
   // Check for auto-initialization flag
-  const shouldAutoInit = process.env.LEO_AUTO_INIT === 'true';
+  const shouldAutoInit = process.env.UX_INGKA_AUTO_INIT === 'true';
 
   // Handle local install in a git repository
   if (!isGlobal && inGitRepo && !alreadyInitialized) {
     if (shouldAutoInit) {
       // Auto-initialize with non-interactive mode
-      console.log(chalk.cyan.bold('\n🚀 Auto-initializing LEO Workflow...\n'));
+      console.log(chalk.cyan.bold('\n🚀 Auto-initializing UX Ingka Kit...\n'));
       console.log(chalk.gray('This will set up:'));
       console.log(chalk.gray('  • Documentation structure (docs/specs/)'));
       console.log(chalk.gray('  • Issue & PR templates'));
@@ -142,23 +142,23 @@ ${chalk.gray('📚 Documentation:')} ${chalk.blue.underline('https://github.com/
       console.log(chalk.gray('  • GitHub labels\n'));
 
       try {
-        // Run leo init with non-interactive mode
+        // Run ux-ingka init with non-interactive mode
         const cliPath = path.join(__dirname, '..', 'bin', 'cli.js');
         execSync(`node "${cliPath}" init --non-interactive --skip-project`, {
           stdio: 'inherit',
-          env: { ...process.env, LEO_POSTINSTALL: 'true' }
+          env: { ...process.env, UX_INGKA_POSTINSTALL: 'true' }
         });
 
-        console.log(chalk.green('\n✅ LEO Workflow initialized successfully!\n'));
-        console.log(chalk.gray('Run ') + chalk.cyan('npx leo status') + chalk.gray(' to check your workflow\n'));
+        console.log(chalk.green('\n✅ UX Ingka Kit initialized successfully!\n'));
+        console.log(chalk.gray('Run ') + chalk.cyan('npx ux-ingka status') + chalk.gray(' to check your workflow\n'));
       } catch (error) {
         console.log(chalk.yellow('\n⚠️  Auto-initialization encountered an issue'));
-        console.log(chalk.gray('You can manually initialize by running: ') + chalk.cyan('npx leo init\n'));
+        console.log(chalk.gray('You can manually initialize by running: ') + chalk.cyan('npx ux-ingka init\n'));
       }
     } else {
       // Show initialization prompt
       console.log(chalk.cyan.bold('\n🎯 Quick Setup Available!\n'));
-      console.log(chalk.white('You installed LEO locally in a git repository.'));
+      console.log(chalk.white('You installed UX Ingka Kit locally in a git repository.'));
       console.log(chalk.white('The workflow can be initialized automatically!\n'));
       console.log(chalk.gray('This will set up:'));
       console.log(chalk.gray('  • Documentation structure (docs/specs/)'));
@@ -169,20 +169,20 @@ ${chalk.gray('📚 Documentation:')} ${chalk.blue.underline('https://github.com/
       console.log(chalk.gray('  • GitHub labels\n'));
 
       console.log(chalk.yellow('Options:\n'));
-      console.log(chalk.cyan('  1.') + chalk.white(' Initialize now: ') + chalk.cyan.bold('npx leo init'));
-      console.log(chalk.cyan('  2.') + chalk.white(' Auto-initialize on install: ') + chalk.cyan.bold('LEO_AUTO_INIT=true npm install'));
+      console.log(chalk.cyan('  1.') + chalk.white(' Initialize now: ') + chalk.cyan.bold('npx ux-ingka init'));
+      console.log(chalk.cyan('  2.') + chalk.white(' Auto-initialize on install: ') + chalk.cyan.bold('UX_INGKA_AUTO_INIT=true npm install'));
       console.log(chalk.cyan('  3.') + chalk.white(' Initialize later in your project directory\n'));
 
-      console.log(chalk.gray('💡 Tip: Add LEO_AUTO_INIT=true to your .npmrc or package.json scripts for automatic setup\n'));
+      console.log(chalk.gray('💡 Tip: Add UX_INGKA_AUTO_INIT=true to your .npmrc or package.json scripts for automatic setup\n'));
     }
   } else if (!isGlobal && inGitRepo && alreadyInitialized) {
-    console.log(chalk.green('\n✅ LEO Workflow already initialized in this project!\n'));
-    console.log(chalk.gray('Run ') + chalk.cyan('npx leo status') + chalk.gray(' to check your workflow\n'));
+    console.log(chalk.green('\n✅ UX Ingka Kit already initialized in this project!\n'));
+    console.log(chalk.gray('Run ') + chalk.cyan('npx ux-ingka status') + chalk.gray(' to check your workflow\n'));
   } else if (isGlobal) {
     // Global install - show standard message (already shown above)
   } else if (!inGitRepo) {
     console.log(chalk.yellow('\n⚠️  Not in a git repository'));
-    console.log(chalk.gray('Navigate to your project and run: ') + chalk.cyan('leo init\n'));
+    console.log(chalk.gray('Navigate to your project and run: ') + chalk.cyan('ux-ingka init\n'));
   }
 
   // ===== NEW: Offer component installation =====

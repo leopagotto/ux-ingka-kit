@@ -1,8 +1,8 @@
 # Security Policy
 
-## 🔒 Security at Ingvar Kit
+## 🔒 Security at UX Ingka Kit
 
-We take the security of Ingvar Kit seriously. This document outlines our security policies, supported versions, and how to report vulnerabilities.
+We take the security of UX Ingka Kit seriously. This document outlines our security policies, supported versions, and how to report vulnerabilities.
 
 ---
 
@@ -35,7 +35,7 @@ Instead, please report them privately using one of these methods:
 
 #### 1. GitHub Security Advisories (Preferred)
 
-1. Go to https://github.com/leopagotto/ingvar-kit/security/advisories
+1. Go to https://github.com/leopagotto/ux-ingka-kit/security/advisories
 2. Click "Report a vulnerability"
 3. Fill out the form with details
 
@@ -43,7 +43,7 @@ Instead, please report them privately using one of these methods:
 
 Send an email to: **leonpagotto@hotmail.com**
 
-**Subject:** `[SECURITY] Ingvar Kit - <Brief Description>`
+**Subject:** `[SECURITY] UX Ingka Kit - <Brief Description>`
 
 **Include:**
 - Description of the vulnerability
@@ -63,7 +63,7 @@ Please provide as much information as possible:
 - Impact: (e.g., code execution, data exposure, denial of service)
 - Severity Assessment: (critical, high, medium, low)
 - Proof of Concept: (code snippet or steps to reproduce)
-- Environment: (OS, Node.js version, ingvar-kit version)
+- Environment: (OS, Node.js version, ux-ingka-kit version)
 - Any workarounds or mitigations you've identified
 ```
 
@@ -96,13 +96,13 @@ We are committed to responding promptly:
 **Installation:**
 ```bash
 # Always install from official npm registry
-npm install -g ingvar-kit
+npm install -g ux-ingka-kit
 
 # Verify package integrity
-npm audit ingvar-kit
+npm audit ux-ingka-kit
 
 # Check installed version
-ingvar --version
+ux-ingka --version
 ```
 
 **Configuration:**
@@ -133,7 +133,7 @@ gh auth status
 **Project Security:**
 ```bash
 # Regularly update dependencies
-npm update -g ingvar-kit
+npm update -g ux-ingka-kit
 
 # Check for vulnerabilities
 npm audit
@@ -280,7 +280,7 @@ We appreciate security researchers who help keep LEO secure:
 Stay informed about security updates:
 
 1. **Watch the Repository:**
-   - Go to https://github.com/leopagotto/ingvar-kit
+   - Go to https://github.com/leopagotto/ux-ingka-kit
    - Click "Watch" → "Custom" → Check "Security alerts"
 
 2. **GitHub Advisory Database:**
@@ -308,7 +308,7 @@ Stay informed about security updates:
 
 ## 🔍 Security Checklist for Users
 
-Before using Ingvar Kit:
+Before using UX Ingka Kit:
 
 - [ ] Install from official npm registry only
 - [ ] Verify package integrity with `npm audit`
@@ -328,8 +328,8 @@ Before using Ingvar Kit:
 **Security Team:** leonpagotto@hotmail.com
 
 **General Support:**
-- Issues: https://github.com/leopagotto/ingvar-kit/issues
-- Discussions: https://github.com/leopagotto/ingvar-kit/discussions
+- Issues: https://github.com/leopagotto/ux-ingka-kit/issues
+- Discussions: https://github.com/leopagotto/ux-ingka-kit/discussions
 
 **Emergency Contact:**
 For critical security issues requiring immediate attention, email with subject `[URGENT SECURITY]`
@@ -340,7 +340,7 @@ For critical security issues requiring immediate attention, email with subject `
 
 ### Standards
 
-Ingvar Kit follows:
+Ingka Kit follows:
 - OWASP Top 10 security practices
 - npm security best practices
 - GitHub security guidelines
@@ -348,7 +348,7 @@ Ingvar Kit follows:
 
 ### Licenses
 
-- **Ingvar Kit:** MIT License
+- **UX Ingka Kit:** MIT License
 - **Dependencies:** All MIT or compatible licenses
 - **No GPL or restrictive licenses**
 
@@ -378,12 +378,12 @@ This security policy is reviewed and updated:
 Verify this security policy is legitimate:
 
 **Official Location:**
-- https://github.com/leopagotto/ingvar-kit/security/policy
+- https://github.com/leopagotto/ux-ingka-kit/security/policy
 
 **Signature:**
-- Maintained by @leonpagotto
-- Official Ingvar Kit repository
+- Maintained by @leopagotto
+- Official UX Ingka Kit repository
 
 ---
 
-**Thank you for helping keep Ingvar Kit secure!** 🦁🔒
+**Thank you for helping keep UX Ingka Kit secure!** 🦁🔒

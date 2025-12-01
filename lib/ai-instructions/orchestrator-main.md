@@ -1,8 +1,8 @@
-# 🎯 LEO Orchestrator Agent - Main Instructions v5.0.0
+# 🎯 UX Ingka Kit Orchestrator Agent - Main Instructions v5.0.0
 
 > **DESIGN-FIRST RAPID PROTOTYPING ARCHITECTURE**
 >
-> This is the primary orchestration layer for all AI agents in the INGVAR Workflow Kit.
+> This is the primary orchestration layer for all AI agents in the UX Ingka Kit.
 > It routes requests through a **Designer-First** sequence to maximize prototyping velocity.
 
 ---
@@ -14,7 +14,7 @@
 - [Task Classification](#task-classification-logic)
 - [Routing Rules](#routing-rules)
 - [Multi-Agent Coordination](#multi-agent-coordination)
-- [INGVAR Workflow Enforcement](#leo-workflow-enforcement)
+- [UX Ingka Workflow Enforcement](#ux-ingka-workflow-enforcement)
 
 ---
 
@@ -26,7 +26,7 @@ You are the **primary entry point** for ALL user requests. Your job is to:
 2. **Classify** - Determine task type and complexity
 3. **Route** - Send to the right agent(s) in the right sequence
 4. **Coordinate** - Manage multi-agent handoffs
-5. **Enforce** - Ensure INGVAR Workflow standards are followed
+5. **Enforce** - Ensure UX Ingka Workflow standards are followed
 6. **Report** - Provide clear progress updates
 
 **Key Principle:** You don't code - you orchestrate. Specialists execute.
@@ -433,7 +433,7 @@ Step 5: DOCUMENTATION AGENT (receives complete feature)
 
 ---
 
-## INGVAR Workflow Enforcement
+## UX Ingka Workflow Enforcement
 
 **CRITICAL: You MUST enforce these rules for EVERY task.**
 
@@ -499,7 +499,7 @@ docs: update profile component docs (#42)
 **BEFORE working:**
 
 ```javascript
-const config = require("./.leorc.json");
+const config = require("./.ux-ingkarc.json");
 const autoResolve = config["auto-resolve"] !== false;
 
 if (autoResolve) {
@@ -581,7 +581,7 @@ PHASE 5: Documentation
 - **"Issue Everything"** - No work without a GitHub issue
 - **"Keep Comments Short"** - 3 lines, 200 chars max
 - **"Spec Complex Work"** - > 1 week = create spec first
-- **"Auto-Resolve Aware"** - Check .leorc.json before proceeding
+- **"Auto-Resolve Aware"** - Check .ux-ingkarc.json before proceeding
 
 ---
 
@@ -594,7 +594,7 @@ PHASE 5: Documentation
 5. **DESIGN FIRST** - Always offer Designer for UI/feature work
 6. **SEQUENTIAL HANDOFFS** - Agents work in order with specs passed forward
 7. **KEEP MESSAGES SHORT** - Issue comments < 3 lines
-8. **CHECK AUTO-RESOLVE** - Read .leorc.json for workflow mode
+8. **CHECK AUTO-RESOLVE** - Read .ux-ingkarc.json for workflow mode
 9. **ATOMIC COMMITS** - Each logical step = one commit with issue reference
 10. **RAPID FEEDBACK** - Designer spec → visual progress → iterate → repeat
 

@@ -43,7 +43,7 @@ LEO Kit is an open-source project and we welcome contributions from everyone:
 3. **Add upstream remote**
 
    ```bash
-   git remote add upstream https://github.com/leopagotto/ingvar-kit.git
+   git remote add upstream https://github.com/leopagotto/ux-ingka-kit.git
    ```
 
 4. **Install dependencies**
@@ -55,7 +55,7 @@ LEO Kit is an open-source project and we welcome contributions from everyone:
 5. **Verify setup**
    ```bash
    npm test      # Should pass all tests
-   ingvar --version # Should show version
+   ux-ingka --version # Should show version
    ```
 
 ---
@@ -531,7 +531,7 @@ footer
 git commit -m "feat(spec): add code generation
 
 Implement Claude 3.5 Sonnet integration for automatic code generation.
-Users can now run 'ingvar spec implement' to generate production code.
+Users can now run 'ux-ingka spec implement' to generate production code.
 
 - Add AICodeGenerator class
 - Integrate Anthropic SDK
@@ -684,10 +684,10 @@ npm test -- --coverage
 
 # Run CLI locally
 npm link
-ingvar spec init test
+ux-ingka spec init test
 
 # Start development server
-ingvar dashboard start
+ux-ingka dashboard start
 
 # View logs
 npm test -- --verbose
@@ -697,11 +697,11 @@ npm test -- --verbose
 
 ## Resources
 
-- **GitHub:** https://github.com/leopagotto/ingvar-kit
-- **Issues:** https://github.com/leopagotto/ingvar-kit/issues
-- **Discussions:** https://github.com/leopagotto/ingvar-kit/discussions
-- **Documentation:** https://github.com/leopagotto/ingvar-kit/tree/main/docs
-- **Wiki:** https://github.com/leopagotto/ingvar-kit/wiki
+- **GitHub:** https://github.com/leopagotto/ux-ingka-kit
+- **Issues:** https://github.com/leopagotto/ux-ingka-kit/issues
+- **Discussions:** https://github.com/leopagotto/ux-ingka-kit/discussions
+- **Documentation:** https://github.com/leopagotto/ux-ingka-kit/tree/main/docs
+- **Wiki:** https://github.com/leopagotto/ux-ingka-kit/wiki
 
 ---
 

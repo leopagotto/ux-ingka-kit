@@ -49,13 +49,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leopagotto/ingvar-kit.git",
+    "url": "https://github.com/leopagotto/ux-ingka-kit.git",
     "directory": "packages/skapa-components"
   },
   "bugs": {
-    "url": "https://github.com/leopagotto/ingvar-kit/issues"
+    "url": "https://github.com/leopagotto/ux-ingka-kit/issues"
   },
-  "homepage": "https://github.com/leopagotto/ingvar-kit/tree/master/packages/skapa-components#readme",
+  "homepage": "https://github.com/leopagotto/ux-ingka-kit/tree/master/packages/skapa-components#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"

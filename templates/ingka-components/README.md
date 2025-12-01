@@ -156,8 +156,8 @@ const breakpoints = {
 
 **Complete PDF specifications are available on GitHub:**
 
-👉 **[IKEA Component PDFs (83 files)](https://github.com/leopagotto/ingvar-kit/tree/main/docs/guides/Skapa-components)**
-👉 **[IKEA Foundation PDFs (23 files)](https://github.com/leopagotto/ingvar-kit/tree/main/docs/guides/Skapa-foundations)**
+👉 **[IKEA Component PDFs (83 files)](https://github.com/leopagotto/ux-ingka-kit/tree/main/docs/guides/Skapa-components)**
+👉 **[IKEA Foundation PDFs (23 files)](https://github.com/leopagotto/ux-ingka-kit/tree/main/docs/guides/Skapa-foundations)**
 
 These include:
 

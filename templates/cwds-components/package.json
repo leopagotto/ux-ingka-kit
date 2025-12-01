@@ -40,10 +40,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/leopagotto/ingvar-kit"
+    "url": "https://github.com/leopagotto/ux-ingka-kit"
   },
   "bugs": {
-    "url": "https://github.com/leopagotto/ingvar-kit/issues"
+    "url": "https://github.com/leopagotto/ux-ingka-kit/issues"
   },
-  "homepage": "https://github.com/leopagotto/ingvar-kit#readme"
+  "homepage": "https://github.com/leopagotto/ux-ingka-kit#readme"
 }

@@ -1,6 +1,6 @@
 <div align="center">
 
-![UX Ingka Kit](docs/assets/ingvar_kit_logo.png)
+![UX Ingka Kit](docs/assets/ux-ingka-kit-logo.png)
 
 <h1>UX Ingka Kit</h1>
 
@@ -109,10 +109,11 @@ import { Icon } from '@ingka/ssr-icon';
 </div>
 <div align="left">
 
-## What is INGVAR-KIT?
+## What is UX Ingka Kit?
 
 **UX Ingka Kit** is an AI-powered CLI that combines multi-agent orchestration, rapid app generation with IKEA design system, spec-driven development, and GitHub Projects automation—all in one powerful tool.
-Named after IKEA founder **Ingvar Kamprad**, this toolkit brings professional design excellence and AI automation together to transform your development workflow.
+
+This toolkit brings professional design excellence and AI automation together to transform your development workflow.
 
 
 ---
@@ -242,7 +243,7 @@ graph LR
 ```mermaid
 sequenceDiagram
     participant Dev as Developer
-    participant CLI as Ingvar CLI
+    participant CLI as UX Ingka CLI
     participant GH as GitHub
     participant AI as AI Agent
 
@@ -290,30 +291,30 @@ graph TD
 
 **[See More Diagrams →](docs/WORKFLOW_DIAGRAMS.md)**
 
-### 🆚 Ingvar vs GitHub Spec Kit
+### 🆚 UX Ingka Kit vs GitHub Spec Kit
 
-Many developers ask: _"How is Ingvar different from GitHub Spec Kit?"_ Here's the breakdown:
+Many developers ask: _"How is UX Ingka Kit different from GitHub Spec Kit?"_ Here's the breakdown:
 
 | Feature             | GitHub Spec Kit             | UX Ingka Kit                            | Winner                     |
 | ------------------- | --------------------------- | ------------------------------------- | -------------------------- |
 | **Philosophy**      | Specs as Code               | Specs as Issues                       | _Different approaches_     |
-| **Storage**         | Files (`specs/001/spec.md`) | GitHub Issues (#42, #80)              | **Ingvar** (simpler)       |
-| **Create Spec**     | Create file → Commit → Push | `ux-ingka spec new "Feature"`           | **Ingvar** (5x faster)     |
-| **View Spec**       | Clone repo → Read file      | Click issue link                      | **Ingvar** (instant)       |
-| **Edit Spec**       | Edit file → Commit → Push   | Edit issue on GitHub                  | **Ingvar** (no git needed) |
-| **Team Collab**     | Pull requests → Merge       | Real-time comments                    | **Ingvar** (no conflicts)  |
-| **Non-Dev Access**  | Requires Git knowledge      | Just GitHub account                   | **Ingvar** (accessible)    |
-| **Diff Tracking**   | `git diff spec.md`          | `ux-ingka spec-diff <issue>`            | **Ingvar** (semantic)      |
-| **Project Board**   | Manual linking              | Native integration                    | **Ingvar** (automatic)     |
+| **Storage**         | Files (`specs/001/spec.md`) | GitHub Issues (#42, #80)              | **UX Ingka** (simpler)       |
+| **Create Spec**     | Create file → Commit → Push | `ux-ingka spec new "Feature"`           | **UX Ingka** (5x faster)     |
+| **View Spec**       | Clone repo → Read file      | Click issue link                      | **UX Ingka** (instant)       |
+| **Edit Spec**       | Edit file → Commit → Push   | Edit issue on GitHub                  | **UX Ingka** (no git needed) |
+| **Team Collab**     | Pull requests → Merge       | Real-time comments                    | **UX Ingka** (no conflicts)  |
+| **Non-Dev Access**  | Requires Git knowledge      | Just GitHub account                   | **UX Ingka** (accessible)    |
+| **Diff Tracking**   | `git diff spec.md`          | `ux-ingka spec-diff <issue>`            | **UX Ingka** (semantic)      |
+| **Project Board**   | Manual linking              | Native integration                    | **UX Ingka** (automatic)     |
 | **Offline Work**    | ✅ Yes (files local)        | ❌ No (requires internet)             | **Spec Kit**               |
 | **Backup**          | ✅ Git history              | ⚠️ GitHub only                        | **Spec Kit**               |
-| **Task Management** | Files (`tasks.md`)          | Dual-mode (checklist OR child issues) | **Ingvar** (flexible)      |
+| **Task Management** | Files (`tasks.md`)          | Dual-mode (checklist OR child issues) | **UX Ingka** (flexible)      |
 
 **Use Spec Kit if:** You want specs as code, prefer file-based workflows, need offline access.
 
-**Use Ingvar if:** You're GitHub-centric, have non-technical stakeholders, want faster iteration, prefer real-time collaboration.
+**Use UX Ingka Kit if:** You're GitHub-centric, have non-technical stakeholders, want faster iteration, prefer real-time collaboration.
 
-**Bottom Line:** We solve the same problem (structured specs) with **opposite philosophies**. Spec Kit = "Specs should be files". Ingvar = "Specs should be issues". Both valid, different use cases. **Ingvar is better for GitHub-native teams**, Spec Kit is better for Git-purist teams.
+**Bottom Line:** We solve the same problem (structured specs) with **opposite philosophies**. Spec Kit = "Specs should be files". UX Ingka Kit = "Specs should be issues". Both valid, different use cases. **UX Ingka Kit is better for GitHub-native teams**, Spec Kit is better for Git-purist teams.
 
 ---
 
@@ -327,9 +328,9 @@ Many developers ask: _"How is Ingvar different from GitHub Spec Kit?"_ Here's th
 
 ### The Solution
 
-Ingvar transforms these pain points into strengths:
+UX Ingka Kit transforms these pain points into strengths:
 
-| Challenge            | Ingvar Solution            | Impact                     |
+| Challenge            | UX Ingka Solution            | Impact                     |
 | -------------------- | -------------------------- | -------------------------- |
 | Manual setup         | One-command initialization | **2-4 hours → 5 minutes**  |
 | Generic AI           | 6 specialized AI agents    | **60% faster development** |
@@ -360,7 +361,7 @@ Your Request → Orchestrator → Routes to Specialist(s)
 
 ### 🚀 Rapid App Generation
 
-Generate complete React apps from a single prompt using Ingvar Spark with IKEA design systems:
+Generate complete React apps from a single prompt using UX Ingka Spark with IKEA design systems:
 
 ```bash
 # Generate with Ingka Skapa (customer-facing)
@@ -710,7 +711,7 @@ ux-ingka hooks install
 - Health check integration (+5 points)
 - Configurable allowed root files
 
-**Configurable in `.ingvarrc.json`** - See [Configuration](#-configuration) section below
+**Configurable in `.ux-ingkarc.json`** - See [Configuration](#-configuration) section below
 
 ### 🔄 GitHub Projects Integration
 
@@ -729,9 +730,9 @@ ux-ingka hooks install
 
 ---
 
-## 🔄 How Ingvar Works
+## 🔄 How UX Ingka Kit Works
 
-Ingvar transforms your GitHub workflow with intelligent automation. Here's the simple version:
+UX Ingka Kit transforms your GitHub workflow with intelligent automation. Here's the simple version:
 
 ### 1. **You Describe Work**
 
@@ -772,7 +773,7 @@ ux-ingka spec new "Build payment system" # For complex features
 
 ## 📋 Spec-First Development (For Complex Features)
 
-When you're building something big (> 1 week), Ingvar helps you plan first:
+When you're building something big (> 1 week), UX Ingka Kit helps you plan first:
 
 ```bash
 # 1. Create specification (GitHub issue, not files!)
@@ -822,7 +823,7 @@ You → Orchestrator → Specialist Agent → GitHub Issue → Work → Done
 
 **Detailed View:**
 
-Ingvar has 3 layers:
+UX Ingka Kit has 3 layers:
 
 1. **CLI Commands** - What you type (`ux-ingka init`, `ux-ingka issue`, `ux-ingka spec new`)
 2. **Orchestrator** - Smart router that picks the right agent
@@ -836,7 +837,7 @@ Everything connects to GitHub:
 
 **[📊 See Architecture Diagrams](docs/WORKFLOW_DIAGRAMS.md#diagram-5-the-complete-leo-journey)**
 
-**Configuration** (`.ingvarrc.json`):
+**Configuration** (`.ux-ingkarc.json`):
 
 ```json
 {
@@ -948,7 +949,7 @@ ux-ingka spark --prompt "Create a todo app with dark mode and drag-drop"
 
 ### Option 3: Development Workflow
 
-Set up Ingvar for project management and AI assistance:
+Set up UX Ingka Kit for project management and AI assistance:
 
 ### Installation
 
@@ -964,7 +965,7 @@ npm install -g ux-ingka-kit
 
 cd your-project
 
-# Initialize Ingvar
+# Initialize UX Ingka Kit
 
 ux-ingka init
 
@@ -974,7 +975,7 @@ ux-ingka init
 
 This creates:
 
-- \`.ingvarrc.json\` - Configuration file
+- `.ux-ingkarc.json` - Configuration file
 - \`.github/copilot-instructions.md\` - AI behavior rules
 - GitHub Project with columns and labels
 - Issue templates and workflow files
@@ -1108,9 +1109,9 @@ ux-ingka spec-extend 42 "Add mobile app" --no-update
 ### Essential Guides
 
 - **[🎨 IKEA Design Guidelines](docs/guides/DESIGN_GUIDELINES.md)** - Complete guide to building IKEA apps with Skapa & CWDS
-- **[Visual Workflow Guide](docs/WORKFLOW_DIAGRAMS.md)** - Simple diagrams showing how Ingvar works
+- **[Visual Workflow Guide](docs/WORKFLOW_DIAGRAMS.md)** - Simple diagrams showing how UX Ingka Kit works
 - **[GitHub Integration Guide](docs/guides/GITHUB_INTEGRATION_GUIDE.md)** - GitHub Projects and automation
-- **[Configuration Guide](#-configuration)** - Customize Ingvar for your project (see below)
+- **[Configuration Guide](#-configuration)** - Customize UX Ingka Kit for your project (see below)
 - **[CLI Reference](bin/cli.js)** - All commands and options (`ux-ingka --help`)
 
 ### IKEA Design Systems
@@ -1220,7 +1221,7 @@ stories/ # User stories
 
 ## 🔧 Configuration
 
-Configure Ingvar via \`.ingvarrc.json\`:
+Configure UX Ingka Kit via `.ux-ingkarc.json`:
 
 \`\`\`json
 {
@@ -1250,7 +1251,7 @@ Configure Ingvar via \`.ingvarrc.json\`:
 
 ## 🧪 Testing
 
-Ingvar has comprehensive test coverage:
+UX Ingka Kit has comprehensive test coverage:
 
 \`\`\`bash
 npm test # Run all tests
@@ -1282,7 +1283,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 # Fork and clone
 
-git clone https://github.com/YOUR_USERNAME/leo-kit.git
+git clone https://github.com/YOUR_USERNAME/ux-ingka-kit.git
 
 # Install dependencies
 
@@ -1321,28 +1322,28 @@ git push origin feature/amazing-feature
 
 - 🐛 **Fixed**: Spark execution bug - all v6.8.4 fixes now in correct file (`spark.js`)
 - ✅ **Removed**: Duplicate `spark-generator.js` file causing confusion
-- 🏷️ **Rebranded**: All "leo" command references → "ingvar" throughout codebase
-- 📝 **Updated**: "LEO workflow" → "INGVAR workflow" in all AI instructions
+- 🏷️ **Rebranded**: All "leo" command references → "ux-ingka" throughout codebase
+- 📝 **Updated**: "LEO workflow" → "UX Ingka workflow" in all AI instructions
 
 **What Works Now:**
 
 - ✅ IngkaExample.tsx generation with working components
 - ✅ INGKA_README.md comprehensive documentation
 - ✅ INGKA_ICON_MIGRATION.md with icon path mappings
-- ✅ Auto-install logic reading `.ingvarrc.json`
+- ✅ Auto-install logic reading `.ux-ingkarc.json`
 - ✅ Uses `@ingka/ssr-icon` (not deprecated `@ingka/icon`)
 
 **Closes:** GitHub issue #18
 
 ---
 
-### 🎉 **v6.8.2** - INGVAR Rebranding & Unified Component Installer! 🎊
+### 🎉 **v6.8.2** - UX Ingka Rebranding & Unified Component Installer! 🎊
 
-🎯 **INGVAR Workflow** • 📦 **One Component Path** • 🔧 **CWDS Deprecated** • ✨ **Streamlined Init**
+🎯 **UX Ingka Workflow** • 📦 **One Component Path** • 🔧 **CWDS Deprecated** • ✨ **Streamlined Init**
 
 **WHAT'S NEW:**
 
-- Consistent **INGVAR** branding throughout (goodbye "LEO"!)
+- Consistent **UX Ingka** branding throughout (goodbye "LEO"!)
 - Unified component installer: Use `ux-ingka components` for all IKEA components
 - Optional component install prompt right after `ux-ingka init`
 - Fixed CWDS command crash (now shows helpful deprecation notice)
@@ -1397,9 +1398,9 @@ lib/ai-instructions/frontend-agent.md # Priority rules
 
 ### 🎉 **v6.7.3** - CLI Command References Fixed! 🎊
 
-🔧 **Consistent CLI** • ✅ **All 'ingvar' Commands** • 📚 **Updated Documentation** • 🎯 **Better UX** • 🚀 **Ready to Use**
+🔧 **Consistent CLI** • ✅ **All 'ux-ingka' Commands** • 📚 **Updated Documentation** • 🎯 **Better UX** • 🚀 **Ready to Use**
 
-**FIXED:** All CLI command references now consistently use `ingvar` instead of mixed `leo`/`ingvar` commands. No more confusion between tool name and command examples!
+**FIXED:** All CLI command references now consistently use `ux-ingka` instead of mixed `leo`/`ingvar` commands. No more confusion between tool name and command examples!
 
 ```bash
 # ✅ Now consistent everywhere:
@@ -1513,7 +1514,7 @@ Major architecture refactor with 90.7% smaller AI instructions, complete 7-agent
 
 ## 📝 License
 
-MIT © [Leo Pagotto](https://github.com/leonpagotto)
+MIT © F&CS XD Team
 
 See [LICENSE](LICENSE) for details.
 
@@ -1544,8 +1545,8 @@ Special thanks to all [contributors](https://github.com/leopagotto/ux-ingka-kit/
 
 <div align="center">
 
-**Made with ❤️ for developers who value automation and best practices**
+**Made with ❤️ by F&CS XD Team**
 
-**[⭐ Star this repo](https://github.com/leopagotto/ux-ingka-kit)** if Ingvar helps your workflow!
+**[⭐ Star this repo](https://github.com/leopagotto/ux-ingka-kit)** if UX Ingka Kit helps your workflow!
 
 </div>

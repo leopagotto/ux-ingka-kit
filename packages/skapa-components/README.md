@@ -1,10 +1,10 @@
-# ⚠️ DEPRECATED: @ingvar-kit/skapa-components
+# ⚠️ DEPRECATED: @ux-ingka-kit/skapa-components
 
 **This package has been deprecated as of November 5, 2025.**
 
-## 🎉 Components Are Now Bundled with ingvar-kit!
+## 🎉 Components Are Now Bundled with ux-ingka-kit!
 
-Skapa components are now bundled directly with `ingvar-kit@6.7.1+`. No separate package installation needed!
+Skapa components are now bundled directly with `ux-ingka-kit@6.7.1+`. No separate package installation needed!
 
 ---
 
@@ -13,38 +13,38 @@ Skapa components are now bundled directly with `ingvar-kit@6.7.1+`. No separate 
 ### Old Way (v6.6.x)
 
 ```bash
-npm install ingvar-kit
-npm install ingvar-skapa-components
+npm install ux-ingka-kit
+npm install ux-ingka-skapa-components
 ```
 
 ```tsx
-import { Button } from "ingvar-skapa-components";
-import { Card } from "ingvar-skapa-components/ingka-direct";
+import { Button } from "ux-ingka-skapa-components";
+import { Card } from "ux-ingka-skapa-components/ingka-direct";
 ```
 
 ### New Way (v6.7.1+)
 
 ```bash
-npm install ingvar-kit react react-dom
+npm install ux-ingka-kit react react-dom
 ```
 
 ```tsx
 // Option 1: Simplified wrappers
-import { Button, TextField } from "ingvar-kit/skapa";
+import { Button, TextField } from "ux-ingka-kit/skapa";
 
 // Option 2: Direct @ingka exports (Recommended)
-import { Button, Card } from "ingvar-kit/skapa/ingka-direct";
+import { Button, Card } from "ux-ingka-kit/skapa/ingka-direct";
 ```
 
 ---
 
 ## 📚 Full Documentation Below (For Reference)
 
-The content below is preserved for historical reference. **Please use the bundled version in `ingvar-kit@6.7.1+` instead.**
+The content below is preserved for historical reference. **Please use the bundled version in `ux-ingka-kit@6.7.1+` instead.**
 
 ---
 
-# @ingvar-kit/skapa-components (DEPRECATED)
+# @ux-ingka-kit/skapa-components (DEPRECATED)
 
 Production-ready React components implementing the IKEA Skapa Design System with **direct @ingka package integration**.
 
@@ -62,7 +62,7 @@ Production-ready React components implementing the IKEA Skapa Design System with
 ## 📦 Installation
 
 ```bash
-npm install @ingvar-kit/skapa-components
+npm install @ux-ingka-kit/skapa-components
 ```
 
 **Peer dependencies:**
@@ -83,7 +83,7 @@ import {
   Card,
   InputField,
   Switch,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function App() {
   const [checked, setChecked] = useState(false);
@@ -110,7 +110,7 @@ function App() {
 Use simplified component names with easier APIs:
 
 ```tsx
-import { Button, TextField, Toggle } from "@ingvar-kit/skapa-components";
+import { Button, TextField, Toggle } from "@ux-ingka-kit/skapa-components";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -146,7 +146,7 @@ function App() {
 ## 📚 Components
 
 > **NEW:** All components are now available with official Skapa names via direct @ingka exports!
-> Import from `@ingvar-kit/skapa-components/ingka-direct` for maximum compatibility.
+> Import from `@ux-ingka-kit/skapa-components/ingka-direct` for maximum compatibility.
 
 ### 🎯 Direct @ingka Exports (64 Components)
 
@@ -237,7 +237,7 @@ function App() {
 
 ### 🔧 Custom Wrappers (via main export)
 
-Additional simplified components from `@ingvar-kit/skapa-components`:
+Additional simplified components from `@ux-ingka-kit/skapa-components`:
 
 - **IconButton** - Icon-only button
 - **DatePicker** - Calendar picker
@@ -258,7 +258,7 @@ import {
   TextArea,
   Checkbox,
   Banner,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function ContactForm() {
   const [form, setForm] = useState({
@@ -330,7 +330,7 @@ import {
   Rating,
   Button,
   Pill,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function ProductCard({ product }) {
   return (
@@ -374,7 +374,7 @@ import {
   ProgressIndicator,
   Status,
   Avatar,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function Dashboard() {
   return (
@@ -422,7 +422,7 @@ import {
   Modal,
   InputField,
   Toast,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function Settings() {
   const [isOpen, setIsOpen] = useState(false);
@@ -481,7 +481,7 @@ import {
   Hyperlink,
   Drawer,
   Button,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 
 function Navigation() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -520,7 +520,7 @@ function Navigation() {
 
 ```css
 /* Automatically included when you import components */
-import '@ingvar-kit/skapa-components/dist/styles.css';
+import '@ux-ingka-kit/skapa-components/dist/styles.css';
 ```
 
 **Available tokens:**
@@ -611,7 +611,7 @@ This package is designed to work seamlessly with GitHub Copilot and AI assistant
 
 ```bash
 # Clone the repository
-git clone https://github.com/leopagotto/ingvar-kit.git
+git clone https://github.com/leopagotto/ux-ingka-kit.git
 cd ingvar-kit/packages/skapa-components
 
 # Install dependencies
@@ -639,12 +639,12 @@ import Button from "@ingka/button";
 import InputField from "@ingka/input-field";
 import Switch from "@ingka/switch";
 
-// After (ingvar-kit/skapa-components)
+// After (ux-ingka-kit/skapa-components)
 import {
   Button,
   InputField,
   Switch,
-} from "@ingvar-kit/skapa-components/ingka-direct";
+} from "@ux-ingka-kit/skapa-components/ingka-direct";
 ```
 
 **Benefits:**
@@ -663,9 +663,9 @@ If migrating from Radix, shadcn/ui, or similar:
 import { Button } from "@radix-ui/react-button";
 
 // After
-import { Button } from "@ingvar-kit/skapa-components/ingka-direct";
+import { Button } from "@ux-ingka-kit/skapa-components/ingka-direct";
 // or simplified wrapper:
-import { Button } from "@ingvar-kit/skapa-components";
+import { Button } from "@ux-ingka-kit/skapa-components";
 ```
 
 ## 📝 Contributing
@@ -673,24 +673,24 @@ import { Button } from "@ingvar-kit/skapa-components";
 We welcome contributions! Please see:
 
 - [CONTRIBUTING.md](../../CONTRIBUTING.md) - Contribution guidelines
-- [GitHub Issues](https://github.com/leopagotto/ingvar-kit/issues) - Report bugs or request features
+- [GitHub Issues](https://github.com/leopagotto/ux-ingka-kit/issues) - Report bugs or request features
 
 ## 📄 License
 
-MIT © Ingvar Kit Contributors
+MIT © UX Ingka Kit Contributors
 
 ## 🔗 Links
 
-- **GitHub:** [leopagotto/ingvar-kit](https://github.com/leopagotto/ingvar-kit)
-- **Issues:** [Report bugs or request features](https://github.com/leopagotto/ingvar-kit/issues)
+- **GitHub:** [leopagotto/ux-ingka-kit](https://github.com/leopagotto/ux-ingka-kit)
+- **Issues:** [Report bugs or request features](https://github.com/leopagotto/ux-ingka-kit/issues)
 - **IKEA Skapa:** [Official Design System](https://skapa.ikea.net)
-- **NPM:** [@ingvar-kit/skapa-components](https://www.npmjs.com/package/@ingvar-kit/skapa-components)
+- **NPM:** [@ux-ingka-kit/skapa-components](https://www.npmjs.com/package/@ux-ingka-kit/skapa-components)
 
 ## 🙏 Acknowledgments
 
 - **IKEA Skapa Team** - For the incredible design system
 - **@ingka Package Maintainers** - For the official React components
-- **Ingvar Kit Contributors** - For building this integration
+- **UX Ingka Kit Contributors** - For building this integration
 
 ---
 

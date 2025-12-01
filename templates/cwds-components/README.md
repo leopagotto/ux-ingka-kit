@@ -4,7 +4,7 @@
 >
 > CWDS components are **NOT available on npm**. They are TypeScript/React templates
 > that you copy to your project and customize. This is different from Skapa components
-> which are bundled with ingvar-kit.
+> which are bundled with ux-ingka-kit.
 
 > **Source of Truth**: Official IKEA Ingka Co-worker Design Components (Skapa + Figma)
 > **JSON Specifications**: Extracted from 73 Skapa screenshots via OCR
@@ -14,8 +14,8 @@
 
 | Feature | Skapa Components | CWDS Templates |
 |---------|-----------------|----------------|
-| **Availability** | ✅ Bundled in ingvar-kit | ❌ Templates only (copy to project) |
-| **Installation** | `import { Button } from 'ingvar-kit/skapa'` | Copy files manually |
+| **Availability** | ✅ Bundled in ux-ingka-kit | ❌ Templates only (copy to project) |
+| **Installation** | `import { Button } from 'ux-ingka-kit/skapa'` | Copy files manually |
 | **Count** | 64 components | 6 templates |
 | **Use Case** | Customer-facing apps | Internal co-worker tools |
 | **Customization** | Use as-is | Full source, modify freely |
@@ -25,7 +25,7 @@
 
 ```bash
 # Copy CWDS templates to your project
-cp -r node_modules/ingvar-kit/templates/cwds-components/* src/components/cwds/
+cp -r node_modules/ux-ingka-kit/templates/cwds-components/* src/components/cwds/
 
 # Or use the CLI (interactive)
 ux-ingka cwds install
@@ -158,7 +158,7 @@ import { BottomBarNavigation } from "./BottomBarNavigation";
 
 ## Installation
 
-### Via Ingvar Kit (Recommended)
+### Via UX Ingka Kit (Recommended)
 
 ## 🚀 Installation
 
@@ -179,7 +179,7 @@ npm install @ingka/navigation-menu
 
 ### Option 2: Local Templates (Fallback)
 
-**If npm packages aren't available, use Ingvar CLI:**
+**If npm packages aren't available, use UX Ingka CLI:**
 
 ```bash
 # Interactive selection (choose components you need)
@@ -317,7 +317,7 @@ For complete specifications and implementation guidance:
 
 For issues with these templates or the CWDS specification extraction:
 
-- GitHub Issues: https://github.com/leopagotto/ingvar-kit/issues
+- GitHub Issues: https://github.com/leopagotto/ux-ingka-kit/issues
 - Label: `cwds`
 
 ## License
