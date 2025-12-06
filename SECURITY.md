@@ -367,8 +367,8 @@ This security policy is reviewed and updated:
 - After significant security events
 - When security landscape changes
 
-**Last Updated:** October 19, 2025  
-**Version:** 1.0  
+**Last Updated:** October 19, 2025
+**Version:** 1.0
 **Next Review:** January 19, 2026
 
 ---

@@ -1,6 +1,6 @@
 {
   "name": "ux-ingka-kit",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "AI-powered workflow automation with IKEA design systems (Ingka Skapa & CWDS). Multi-agent orchestration, spec-first development, and rapid app generation.",
   "main": "dist/index.js",
   "bin": {
