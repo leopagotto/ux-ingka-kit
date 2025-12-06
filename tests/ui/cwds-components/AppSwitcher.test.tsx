@@ -4,7 +4,7 @@ import {
   AppSwitcher,
   AppSwitcherProps,
   App,
-} from "../../templates/cwds-components/AppSwitcher";
+} from "../../../templates/cwds-components/AppSwitcher";
 
 describe("AppSwitcher Component", () => {
   const defaultApps: App[] = [

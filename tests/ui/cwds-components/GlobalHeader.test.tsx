@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import {
   GlobalHeader,
   GlobalHeaderProps,
-} from "../../templates/cwds-components/GlobalHeader";
+} from "../../../templates/cwds-components/GlobalHeader";
 
 describe("GlobalHeader Component", () => {
   const defaultProps: GlobalHeaderProps = {

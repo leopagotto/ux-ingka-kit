@@ -1,4 +1,4 @@
-const { ComplexityEstimator } = require('../lib/utils/complexity-estimator');
+const { ComplexityEstimator } = require('../../lib/utils/complexity-estimator');
 
 describe('ComplexityEstimator', () => {
   let estimator;

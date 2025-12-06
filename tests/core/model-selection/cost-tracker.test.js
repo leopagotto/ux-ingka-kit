@@ -4,7 +4,7 @@
  * Tests budget enforcement, usage tracking, and cost calculation
  */
 
-const CostTracker = require('../../lib/model-selection/cost-tracker');
+const CostTracker = require('../../../lib/model-selection/cost-tracker');
 const fs = require('fs-extra');
 const path = require('path');
 

@@ -4,7 +4,7 @@ import {
   NavigationMenu,
   NavigationMenuProps,
   NavigationMenuItem,
-} from "../../templates/cwds-components/NavigationMenu";
+} from "../../../templates/cwds-components/NavigationMenu";
 
 describe("NavigationMenu Component", () => {
   const defaultItems: NavigationMenuItem[] = [

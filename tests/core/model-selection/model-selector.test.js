@@ -8,8 +8,8 @@
  * - Budget enforcement
  */
 
-const ModelSelector = require('../../lib/model-selection');
-const CostTracker = require('../../lib/model-selection/cost-tracker');
+const ModelSelector = require('../../../lib/model-selection');
+const CostTracker = require('../../../lib/model-selection/cost-tracker');
 
 // Mock CostTracker to avoid file I/O in tests
 jest.mock('../../lib/model-selection/cost-tracker');

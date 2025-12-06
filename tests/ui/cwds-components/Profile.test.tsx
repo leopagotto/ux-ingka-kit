@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Profile, ProfileProps } from "../../templates/cwds-components/Profile";
+import { Profile, ProfileProps } from "../../../templates/cwds-components/Profile";
 
 describe("Profile Component", () => {
   const defaultProps: ProfileProps = {

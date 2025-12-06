@@ -7,9 +7,9 @@
  * - PhaseBasedStrategy
  */
 
-const ComplexityBasedStrategy = require('../../lib/model-selection/strategies/complexity-based');
-const AgentSpecificStrategy = require('../../lib/model-selection/strategies/agent-specific');
-const PhaseBasedStrategy = require('../../lib/model-selection/strategies/phase-based');
+const ComplexityBasedStrategy = require('../../../lib/model-selection/strategies/complexity-based');
+const AgentSpecificStrategy = require('../../../lib/model-selection/strategies/agent-specific');
+const PhaseBasedStrategy = require('../../../lib/model-selection/strategies/phase-based');
 
 describe('ComplexityBasedStrategy', () => {
   let strategy;

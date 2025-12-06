@@ -4,7 +4,7 @@ import {
   BottomBarNavigation,
   BottomBarNavigationProps,
   BottomNavItem,
-} from "../../templates/cwds-components/BottomBarNavigation";
+} from "../../../templates/cwds-components/BottomBarNavigation";
 
 describe("BottomBarNavigation Component", () => {
   const defaultItems: BottomNavItem[] = [

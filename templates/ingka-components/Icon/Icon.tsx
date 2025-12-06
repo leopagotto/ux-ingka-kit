@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 /**
  * Icon Component
@@ -30,15 +30,16 @@ export interface IconProps {
 }
 
 const sizeMap = {
-  xs: "w-3 h-3", // 12px
-  sm: "w-4 h-4", // 16px
-  md: "w-5 h-5", // 20px
-  lg: "w-6 h-6", // 24px
-  xl: "w-8 h-8", // 32px
+  xs: 12,
+  sm: 16,
+  md: 20,
+  lg: 24,
+  xl: 32,
 };
 
 /**
  * Icon component that renders IKEA Skapa SVG icons
+ * Loads SVG icons from public/Icons/ folder
  */
 export const Icon: React.FC<IconProps> = ({
   name,
@@ -48,27 +49,71 @@ export const Icon: React.FC<IconProps> = ({
   "aria-label": ariaLabel,
   decorative = false,
 }) => {
-  // Convert size to class or inline style
-  const sizeClass = typeof size === "string" ? sizeMap[size] : "";
-  const sizeStyle =
-    typeof size === "number" ? { width: size, height: size } : {};
+  const [svgContent, setSvgContent] = useState<string | null>(null);
+  const [error, setError] = useState<boolean>(false);
+
+  // Get numeric size
+  const numericSize = typeof size === "string" ? sizeMap[size] : size;
+
+  // Load SVG content
+  useEffect(() => {
+    const loadSvg = async () => {
+      try {
+        const response = await fetch(`/Icons/${name}.svg`);
+        if (!response.ok) throw new Error("Icon not found");
+        const text = await response.text();
+        setSvgContent(text);
+        setError(false);
+      } catch (e) {
+        console.warn(`Icon "${name}" not found`);
+        setError(true);
+      }
+    };
+    loadSvg();
+  }, [name]);
 
   // Accessibility attributes
   const ariaAttributes = decorative
-    ? { "aria-hidden": "true", role: "presentation" }
-    : { "aria-label": ariaLabel || name, role: "img" };
+    ? { "aria-hidden": true, role: "presentation" as const }
+    : { "aria-label": ariaLabel || name, role: "img" as const };
 
+  // Show placeholder or error state
+  if (error) {
+    return (
+      <span
+        className={`inline-flex items-center justify-center bg-gray-100 text-gray-400 rounded ${className}`}
+        style={{ width: numericSize, height: numericSize, color }}
+        title={`Icon "${name}" not found`}
+        {...ariaAttributes}
+      >
+        ?
+      </span>
+    );
+  }
+
+  // Loading state
+  if (!svgContent) {
+    return (
+      <span
+        className={`inline-block bg-gray-100 rounded animate-pulse ${className}`}
+        style={{ width: numericSize, height: numericSize }}
+      />
+    );
+  }
+
+  // Render the SVG with proper styling
   return (
-    <svg
-      className={`inline-block ${sizeClass} ${className}`}
-      style={{ ...sizeStyle, color }}
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <span
+      className={`inline-flex items-center justify-center ${className}`}
+      style={{ width: numericSize, height: numericSize, color }}
       {...ariaAttributes}
-    >
-      <use href={`/Icons/${name}.svg#icon`} />
-    </svg>
+      dangerouslySetInnerHTML={{
+        __html: svgContent
+          .replace(/width="[^"]*"/, `width="${numericSize}"`)
+          .replace(/height="[^"]*"/, `height="${numericSize}"`)
+          .replace(/fill="[^"]*"/g, 'fill="currentColor"'),
+      }}
+    />
   );
 };
 

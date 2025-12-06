@@ -3,7 +3,7 @@
  * Tests for Express server, REST API endpoints, and WebSocket
  */
 
-const APIServer = require('../lib/team/api-server');
+const APIServer = require('../../lib/team/api-server');
 const request = require('supertest');
 const path = require('path');
 const fs = require('fs');
